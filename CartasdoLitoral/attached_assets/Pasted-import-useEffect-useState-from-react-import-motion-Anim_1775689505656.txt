@@ -1,0 +1,232 @@
+import { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { X } from "lucide-react";
+
+interface WaitlistModalProps {
+  isOpen: boolean;
+  plan: "mensal" | "anual" | null;
+  onClose: () => void;
+}
+
+export default function WaitlistModal({ isOpen, plan, onClose }: WaitlistModalProps) {
+  const [firstName, setFirstName] = useState("");
+  const [email, setEmail] = useState("");
+  const [selectedPlan, setSelectedPlan] = useState<"mensal" | "anual">(plan || "anual");
+  const [formState, setFormState] = useState<"idle" | "loading" | "success" | "error">("idle");
+
+  useEffect(() => {
+    if (plan) setSelectedPlan(plan);
+  }, [plan]);
+
+  useEffect(() => {
+    const handleEsc = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose();
+    };
+    window.addEventListener("keydown", handleEsc);
+    return () => window.removeEventListener("keydown", handleEsc);
+  }, [onClose]);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+      setTimeout(() => {
+        setFormState("idle");
+        setFirstName("");
+        setEmail("");
+      }, 300);
+    }
+    return () => { document.body.style.overflow = ""; };
+  }, [isOpen]);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setFormState("loading");
+
+    try {
+      const res = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email,
+          firstName,
+          plan: selectedPlan,
+          tags: [`waitlist`, `plano-${selectedPlan}`],
+        }),
+      });
+
+      if (res.ok) {
+        setFormState("success");
+      } else {
+        setFormState("error");
+      }
+    } catch {
+      setFormState("error");
+    }
+  };
+
+  return (
+    
+      {isOpen && (
+        <>
+          {/* Backdrop */}
+          
+
+          {/* Modal */}
+          
+            
+ e.stopPropagation()}
+            >
+              {/* Vintage stamp */}
+              
+
+                
+
+                  
+
+                    
+                    
+CARTAS DO LITORAL
+
+                  
+
+                
+
+              
+
+
+              {/* Close button */}
+              
+                
+              
+
+              
+
+                {formState === "success" ? (
+                  
+                    
+
+
+                      Com o mar ainda nos olhos,
+                    
+
+
+                    
+
+
+                      Mel ✉
+                    
+
+
+                    
+
+
+                      Você está na lista. Quando as cartas estiverem prontas para viajar, você será a primeira a saber.
+                    
+
+
+                    
+                      Fechar
+                    
+                  
+                ) : (
+                  <>
+                    {/* Header */}
+                    
+
+                      
+
+
+                        Lista de espera
+                      
+
+
+                      
+
+                        Reserve o seu lugar.
+                      
+
+                      
+
+
+                        As cartas ainda estão sendo preparadas. Deixe o seu contato e avise quando estiver pronto para receber a primeira.
+                      
+
+
+                    
+
+
+                    {/* Form */}
+                    
+
+                       setFirstName(e.target.value)}
+                        className="w-full px-5 py-4 bg-secondary border-none focus:outline-none focus:ring-1 focus:ring-accent-warm text-foreground placeholder:text-muted-foreground/50 transition-shadow text-sm"
+                      />
+                       setEmail(e.target.value)}
+                        className="w-full px-5 py-4 bg-secondary border-none focus:outline-none focus:ring-1 focus:ring-accent-warm text-foreground placeholder:text-muted-foreground/50 transition-shadow text-sm"
+                        required
+                      />
+
+                      {/* Plan selector */}
+                      
+
+                         setSelectedPlan("mensal")}
+                          className={`py-3 px-4 text-sm font-medium tracking-wide transition-all border ${
+                            selectedPlan === "mensal"
+                              ? "border-accent-warm bg-accent-warm/10 text-accent-warm"
+                              : "border-foreground/20 text-muted-foreground hover:border-accent-warm/50"
+                          }`}
+                        >
+                          Mensal
+                        
+                         setSelectedPlan("anual")}
+                          className={`py-3 px-4 text-sm font-medium tracking-wide transition-all border relative ${
+                            selectedPlan === "anual"
+                              ? "border-accent-warm bg-accent-warm text-white"
+                              : "border-foreground/20 text-muted-foreground hover:border-accent-warm/50"
+                          }`}
+                        >
+                          Anual
+                          
+                            Melhor valor
+                          
+                        
+                      
+
+
+                      {formState === "error" && (
+                        
+
+
+                          Algo correu mal. Tente novamente.
+                        
+
+
+                      )}
+
+                      
+                        {formState === "loading" ? "Guardando o seu lugar..." : "Quero ser avisada"}
+                      
+
+                      
+
+
+                        Nenhum pagamento agora. Só uma promessa mútua.
+                      
+
+
+                    
+
+                  
+                )}
+              
+
+            
+
+          
+        
+      )}
+    
+  );
+}

@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Cartas do Litoral"
+version = "1.0.0"
+id = "artifacts/cartas-do-litoral"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 18990
+
+[services.development]
+run = "pnpm --filter @workspace/cartas-do-litoral run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/cartas-do-litoral", "run", "build" ]
+publicDir = "artifacts/cartas-do-litoral/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18990"
+BASE_PATH = "/"

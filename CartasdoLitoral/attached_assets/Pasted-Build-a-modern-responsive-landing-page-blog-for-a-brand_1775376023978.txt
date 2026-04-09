@@ -1,0 +1,213 @@
+Build a modern, responsive landing page + blog for a brand called "Cartas do Litoral."
+
+// ─────────────────────────────────────────
+// DESIGN DIRECTION
+// ─────────────────────────────────────────
+
+This is a calm, editorial, coastal storytelling brand.
+The design should feel: minimal, airy, emotional, premium but simple,
+inspired by print (magazine / letter aesthetic).
+
+Avoid anything that feels: tech startup, loud, overdesigned, cartoonish.
+
+Do NOT use any external UI component libraries (no shadcn, MUI, Chakra).
+Build all components from scratch using Tailwind CSS only.
+Keep the component tree clean and flat.
+
+// ─────────────────────────────────────────
+// COLOR PALETTE — USE EXACTLY
+// ─────────────────────────────────────────
+
+Background (paper):       #F5F1EA
+Secondary background:     #EAE3D8
+Primary text:             #1F3A44
+Accent green:             #6F8A7E
+Warm accent (CTA):        #A67C52
+
+// ─────────────────────────────────────────
+// TYPOGRAPHY
+// ─────────────────────────────────────────
+
+Headings:    Playfair Display (Google Fonts)
+Body:        Lora (Google Fonts)
+Handwritten: Caveat (Google Fonts)
+
+Typography should feel elegant, editorial, and light.
+Not heavy or bold everywhere.
+
+// ─────────────────────────────────────────
+// TECH STACK
+// ─────────────────────────────────────────
+
+React + TypeScript
+React Router for page navigation
+Clean component structure
+Ready for Vercel deployment
+No backend required — static for now
+
+Routes needed:
+/             → Landing page
+/diario       → Blog index (Diário do Litoral)
+/diario/:slug → Individual blog post
+
+// ─────────────────────────────────────────
+// HERO SECTION
+// ─────────────────────────────────────────
+
+Layout: Split screen on desktop.
+LEFT:  Full-height lifestyle image (use uploaded PNG)
+RIGHT: Textured paper background (#F5F1EA) with content
+
+LEFT IMAGE:
+Coastal Brazil. Soft, slightly muted tones.
+Woman walking along shoreline.
+Bottom of dress slightly wet.
+Calm, reflective mood.
+
+RIGHT SIDE CONTENT:
+Headline (large, Playfair Display, elegant):
+  CONTINUE A HISTÓRIA
+  COM A MEL
+
+Note: "Mel" is the narrator's nickname — warm, Brazilian, intimate.
+It should feel like the reader already knows her.
+
+Subtext (3 lines, Lora, smaller):
+  Uma carta por mês
+  Um novo lugar do litoral
+  Para ler com calma.
+
+Decorative elements (TWO elements — both required):
+
+  1. POSTAL WAVE LINES
+     Thin, minimal horizontal wave lines
+     Style: classic postal cancellation marks
+     Color: #6F8A7E at 30% opacity
+     Position: subtle, behind or near the headline
+     SVG drawn, not an image
+
+  2. VINTAGE STAMP
+     Position: top-right corner of the right panel
+     OR overlapping slightly between left image and right panel
+     Style: rectangular with perforated/dotted border edge
+     Inside the stamp:
+       Small coastal illustration (wave or lighthouse silhouette)
+       Text: "CARTAS DO LITORAL"
+       Text: "BRASIL" at bottom
+       Faint number: "001" like a postage value
+     Color: #A67C52 tones on #EAE3D8 background
+     Slightly rotated (2-3 degrees)
+     Aged/worn feel — slight opacity reduction (85%)
+     SVG drawn, not an image
+     Do NOT make it too large — it is a detail, not a hero element
+
+CTA button:
+  Text:  "Começar com a primeira carta"
+  Color: #A67C52
+  Style: Soft outlined button, generous padding
+
+Visual restraint:
+  Include 1-2 Polaroid-style images (slightly rotated)
+  Keep generous whitespace. Do NOT overcrowd.
+  The stamp and wave lines are details — they should reward
+  close attention, not dominate the layout.
+
+// ─────────────────────────────────────────
+// EMAIL CAPTURE SECTION
+// ─────────────────────────────────────────
+
+Headline: "Prefere começar devagar?"
+Text: "Receba trechos da história e novidades por email."
+
+Input: Email field + button "Quero receber"
+Style: Minimal, centered, same color palette
+No heavy borders or shadows.
+
+// ─────────────────────────────────────────
+// NARRATOR TEASER SECTION
+// ─────────────────────────────────────────
+
+Headline: "Quem escreve essas cartas?"
+
+Small section introducing Amélia — brief, mysterious, warm.
+Her friends call her Mel.
+One polaroid-style image, slightly rotated.
+2-3 lines in Caveat font as if handwritten.
+Tone: intimate and curious, not biographical.
+
+Use this copy exactly:
+  "Me chamo Amélia — mas pode me chamar de Mel.
+  Larguei tudo aos 37 com uma mochila
+  pequena demais pra uma viagem longa.
+  O litoral me recebeu sem perguntas."
+
+// ─────────────────────────────────────────
+// SUBSCRIPTION SECTION
+// ─────────────────────────────────────────
+
+Headline: "Receba a história completa em casa"
+
+Details (3 items):
+  · 1 carta por mês
+  · Entrega pelo correio
+  · Experiência física + digital
+
+Two buttons:
+  "Assinar mensal"
+  "Assinar anual" ← highlight this one with #A67C52
+
+// ─────────────────────────────────────────
+// BLOG — DIÁRIO DO LITORAL
+// ─────────────────────────────────────────
+
+Route: /diario
+
+Section headline: "Diário do Litoral"
+Subhead: "Histórias, lugares e o que a Mel encontrou pelo caminho."
+
+Blog index layout:
+  3-column card grid on desktop
+  1-column on mobile
+  Each card: featured image, category tag (pill),
+             title, excerpt (2 lines), "Ler mais →" link
+  Editorial feel — magazine spread, not blog feed
+  Generous whitespace between cards
+
+Individual post page (/diario/:slug):
+  Clean reading layout
+  Max-width: 680px centered
+  Playfair Display for post title (large)
+  Lora for body text, 18px, line-height 1.9
+  Drop cap on first paragraph
+  Category tag at top
+  Author line: "Mel · [location] · [month]"
+  Subtle decorative divider between sections
+  No sidebar. Full attention on the text.
+
+Seed with 3 sample blog posts:
+  Post 1: "A ilha que aparece do céu" — Florianópolis
+  Post 2: "O silêncio de Garopaba em agosto" — Garopaba
+  Post 3: "Cartas que nunca foram enviadas" — reflective/personal
+
+// ─────────────────────────────────────────
+// RESPONSIVE BEHAVIOR
+// ─────────────────────────────────────────
+
+Mobile:
+  Stack hero layout (image first, then content)
+  Maintain spacing and elegance
+  Typography readable and airy
+  Blog cards stack to single column
+  Navigation collapses to hamburger menu
+  Stamp scales down gracefully — do not hide it entirely
+
+// ─────────────────────────────────────────
+// FINAL TONE REFERENCE
+// ─────────────────────────────────────────
+
+This is a storytelling product, not a SaaS product.
+Design should feel like: receiving a letter, slowing down,
+escaping into a place.
+
+Subtle inspiration from: https://theflowerletters.com/
+Do not copy — use only as mood reference for pacing and whitespace.
