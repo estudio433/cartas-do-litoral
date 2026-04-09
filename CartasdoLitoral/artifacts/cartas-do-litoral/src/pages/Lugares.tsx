@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+import heroImg from "@assets/Cartas_do_litoral_landing_page_(19)_1775764651159.png";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -56,7 +57,17 @@ export default function Lugares() {
 
   return (
     <div className="pt-20">
-      <section className="pt-32 pb-20 px-6 bg-background">
+      {/* Hero image */}
+      <div className="w-full">
+        <img
+          src={heroImg}
+          alt="Lugares"
+          className="w-full object-cover"
+          style={{ maxHeight: "520px" }}
+        />
+      </div>
+
+      <section className="pt-16 pb-20 px-6 bg-background">
         <div className="max-w-3xl mx-auto">
           <motion.div initial="hidden" animate="visible" variants={fadeIn}>
             <h1 className="font-serif text-5xl mb-6">Lugares</h1>
