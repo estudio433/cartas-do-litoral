@@ -36,14 +36,14 @@ export default function Cartas() {
     <div className="pt-20">
 
       {/* Hero image */}
-      <section className="bg-[#1f3a44] py-20 px-6 flex justify-center items-center">
+      <section className="bg-[#1f3a44] flex justify-center items-center overflow-hidden">
         <motion.img
           src={heroCartasImage}
           alt="O que chega na sua caixa de correio"
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, ease: "easeOut" }}
-          className="max-w-3xl w-full drop-shadow-2xl"
+          className="w-full h-auto"
         />
       </section>
 
