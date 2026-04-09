@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import cartasImage from "@assets/Cartas_-_What_arrives_1775458325566.png";
-import heroCartasImage from "@assets/Cartas_-_What_arrives_(4)_1775468358785.png";
+import heroCartasImage from "@assets/Cartas_do_litoral_landing_page_(20)_1775766669174.png";
 import { PenLine, Mail, BookOpen } from "lucide-react";
 import WaitlistModal from "@/components/WaitlistModal";
 
