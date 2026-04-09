@@ -43,7 +43,7 @@ export default function Cartas() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, ease: "easeOut" }}
-          className="max-w-sm w-full drop-shadow-2xl"
+          className="max-w-3xl w-full drop-shadow-2xl"
         />
       </section>
 
