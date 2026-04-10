@@ -60,14 +60,31 @@ export default function LandingPage() {
   const [comunidadeOpen, setComunidadeOpen] = useState(false);
   const [comunidadeEmail, setComunidadeEmail] = useState("");
   const [comunidadeState, setComunidadeState] = useState<
-    "idle" | "loading" | "success"
+    "idle" | "loading" | "success" | "error"
   >("idle");
 
   const handleComunidadeSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setComunidadeState("loading");
-    await new Promise((r) => setTimeout(r, 800));
-    setComunidadeState("success");
+    try {
+      const res = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email: comunidadeEmail,
+          firstName: "",
+          tags: ["comunidade-waitlist"],
+        }),
+      });
+      if (res.ok) {
+        setComunidadeState("success");
+        setComunidadeEmail("");
+      } else {
+        setComunidadeState("error");
+      }
+    } catch {
+      setComunidadeState("error");
+    }
   };
 
   const handleSubscribe = async (e: React.FormEvent) => {
