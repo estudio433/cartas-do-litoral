@@ -26,12 +26,12 @@ function PinterestIcon({ size = 18 }: { size?: number }) {
 }
 
 const socials = [
-  { icon: Instagram, href: "#", label: "Instagram" },
-  { icon: Facebook, href: "#", label: "Facebook" },
-  { icon: TikTokIcon, href: "#", label: "TikTok" },
-  { icon: SpotifyIcon, href: "#", label: "Spotify" },
+  { icon: Instagram, href: "https://instagram.com/cartas.do.litoral", label: "Instagram" },
+  { icon: Facebook, href: "https://facebook.com/cartas.do.litoral", label: "Facebook" },
+  { icon: TikTokIcon, href: "https://tiktok.com/@cartas.do.litoral", label: "TikTok" },
+  { icon: PinterestIcon, href: "https://pinterest.com/cartasdolitoral", label: "Pinterest" },
+  { icon: SpotifyIcon, href: "https://open.spotify.com/user/314yyxfilgeqqjcgugopwqkxjune", label: "Spotify" },
   { icon: Youtube, href: "#", label: "YouTube" },
-  { icon: PinterestIcon, href: "#", label: "Pinterest" },
 ];
 
 export default function Footer() {
@@ -55,6 +55,8 @@ export default function Footer() {
               key={label}
               href={href}
               aria-label={label}
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-white/40 hover:text-white/90 transition-colors duration-300"
             >
               <Icon size={18} />
