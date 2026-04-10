@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import heroImage from "@assets/Cartas_-_What_arrives_(15)_1775651095870.png";
+import heroImage from "@assets/Cartas_do_Litoral_Logo_(6)_1775817332554.png";
 import melImage from "@assets/Reflexões_(4)_1775383545006.png";
 import cartasImage from "@assets/Cartas_-_What_arrives_1775458325566.png";
 import landingCompositeImage from "@assets/Cartas_do_litoral_landing_page_(14)_1775687418525.png";
