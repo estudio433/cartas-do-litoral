@@ -2,7 +2,6 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import heroImage from "@assets/Cartas_-_What_arrives_(15)_1775651095870.png";
 import melImage from "@assets/Reflexões_(4)_1775383545006.png";
-import ribeirao from "@assets/Mes_01_Cartas_do_Litoral_-_Playlist_(4)_1775384278579.png";
 import cartasImage from "@assets/Cartas_-_What_arrives_1775458325566.png";
 import landingCompositeImage from "@assets/Cartas_do_litoral_landing_page_(14)_1775687418525.png";
 import { Link } from "wouter";
@@ -172,9 +171,13 @@ export default function LandingPage() {
               Receber a primeira carta
             </button>
 
-            {/* Polaroid bottom-right */}
-            <div className="absolute -bottom-24 -right-12 -rotate-6 w-32 hidden lg:block bg-white p-2 shadow-xl">
-              <img src={ribeirao} alt="Praia de Ribeirão da Ilha" className="aspect-square w-full object-cover" />
+            {/* Wave Lines bottom */}
+            <div className="absolute bottom-8 left-0 w-full pointer-events-none opacity-20 text-accent-green">
+              <svg viewBox="0 0 1000 100" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="M0 25 C150 25 150 5 300 5 C450 5 450 25 600 25 C750 25 750 5 900 5 C1000 5 1000 25 1000 25" stroke="currentColor" strokeWidth="1"/>
+                <path d="M0 50 C150 50 150 30 300 30 C450 30 450 50 600 50 C750 50 750 30 900 30 C1000 30 1000 50 1000 50" stroke="currentColor" strokeWidth="1"/>
+                <path d="M0 75 C150 75 150 55 300 55 C450 55 450 75 600 75 C750 75 750 55 900 55 C1000 55 1000 75 1000 75" stroke="currentColor" strokeWidth="1"/>
+              </svg>
             </div>
           </motion.div>
         </div>
