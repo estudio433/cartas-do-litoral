@@ -1,0 +1,66 @@
+{/* 7. COMMUNITY INVITE */}
+<section className="py-32 px-6 bg-background text-center">
+  <motion.div
+    initial="hidden"
+    whileInView="visible"
+    viewport={{ once: true }}
+    variants={fadeIn}
+    className="max-w-lg mx-auto space-y-8"
+  >
+    <p className="font-serif text-2xl text-foreground/80 leading-relaxed">
+      Algumas histórias continuam depois da carta.
+    </p>
+    <p className="text-muted-foreground leading-relaxed">
+      Existe um espaço onde outras pessoas também estão
+      acompanhando esse caminho — com calma, cada uma no seu tempo.
+      Ainda não está aberto para todos.
+    </p>
+
+    {comunidadeState === "success" ? (
+      <motion.p
+        initial={{ opacity: 0, y: 8 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="font-handwritten text-xl text-foreground/70"
+      >
+        Avisaremos você em breve. ✉
+      </motion.p>
+    ) : comunidadeOpen ? (
+      <motion.form
+        initial={{ opacity: 0, y: 8 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4 }}
+        onSubmit={handleComunidadeSubmit}
+        className="flex flex-col sm:flex-row gap-3 pt-2"
+      >
+        <input
+          type="email"
+          placeholder="Seu melhor email"
+          value={comunidadeEmail}
+          onChange={(e) => setComunidadeEmail(e.target.value)}
+          className="flex-1 px-6 py-4 bg-secondary border-none focus:outline-none focus:ring-1 focus:ring-accent-warm text-foreground placeholder:text-muted-foreground/50 transition-shadow text-sm"
+          required
+          autoFocus
+        />
+        <button
+          type="submit"
+          disabled={comunidadeState === "loading"}
+          className="px-8 py-4 border border-foreground/20 text-foreground/70 hover:border-accent-warm hover:text-accent-warm transition-all duration-300 font-medium tracking-wide text-sm disabled:opacity-50 whitespace-nowrap"
+        >
+          {comunidadeState === "loading" ? "Guardando..." : "Quero ser avisada →"}
+        </button>
+      </motion.form>
+    ) : (
+      <button
+        onClick={() => setComunidadeOpen(true)}
+        className="inline-block mt-4 px-8 py-4 border border-foreground/20 text-foreground/70 hover:border-accent-warm hover:text-accent-warm transition-all duration-400 font-medium tracking-wide text-sm"
+      >
+        Avise-me quando abrir →
+      </button>
+    )}
+  </motion.div>
+</section>
+<WaitlistModal
+  isOpen={modalOpen}
+  plan={modalPlan}
+  onClose={() => setModalOpen(false)}
+/>

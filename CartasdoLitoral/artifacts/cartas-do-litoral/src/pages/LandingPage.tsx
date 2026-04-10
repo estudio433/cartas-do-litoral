@@ -57,6 +57,19 @@ export default function LandingPage() {
     "idle" | "loading" | "success" | "error"
   >("idle");
 
+  const [comunidadeOpen, setComunidadeOpen] = useState(false);
+  const [comunidadeEmail, setComunidadeEmail] = useState("");
+  const [comunidadeState, setComunidadeState] = useState<
+    "idle" | "loading" | "success"
+  >("idle");
+
+  const handleComunidadeSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setComunidadeState("loading");
+    await new Promise((r) => setTimeout(r, 800));
+    setComunidadeState("success");
+  };
+
   const handleSubscribe = async (e: React.FormEvent) => {
     e.preventDefault();
     setFormState("loading");
@@ -459,11 +472,52 @@ export default function LandingPage() {
             Algumas histórias continuam depois da carta.
           </p>
           <p className="text-muted-foreground leading-relaxed">
-            Existe um espaço onde outras pessoas também estão acompanhando esse caminho — com calma, cada uma no seu tempo.
+            Existe um espaço onde outras pessoas também estão
+            acompanhando esse caminho — com calma, cada uma no seu tempo.
+            Ainda não está aberto para todos.
           </p>
-          <Link href="/comunidade" className="inline-block mt-4 px-8 py-4 border border-foreground/20 text-foreground/70 hover:border-accent-warm hover:text-accent-warm transition-all duration-400 font-medium tracking-wide text-sm">
-            Entrar com convite
-          </Link>
+
+          {comunidadeState === "success" ? (
+            <motion.p
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="font-handwritten text-xl text-foreground/70"
+            >
+              Avisaremos você em breve. ✉
+            </motion.p>
+          ) : comunidadeOpen ? (
+            <motion.form
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4 }}
+              onSubmit={handleComunidadeSubmit}
+              className="flex flex-col sm:flex-row gap-3 pt-2"
+            >
+              <input
+                type="email"
+                placeholder="Seu melhor email"
+                value={comunidadeEmail}
+                onChange={(e) => setComunidadeEmail(e.target.value)}
+                className="flex-1 px-6 py-4 bg-secondary border-none focus:outline-none focus:ring-1 focus:ring-accent-warm text-foreground placeholder:text-muted-foreground/50 transition-shadow text-sm"
+                required
+                autoFocus
+              />
+              <button
+                type="submit"
+                disabled={comunidadeState === "loading"}
+                className="px-8 py-4 border border-foreground/20 text-foreground/70 hover:border-accent-warm hover:text-accent-warm transition-all duration-300 font-medium tracking-wide text-sm disabled:opacity-50 whitespace-nowrap"
+              >
+                {comunidadeState === "loading" ? "Guardando..." : "Quero ser avisada →"}
+              </button>
+            </motion.form>
+          ) : (
+            <button
+              onClick={() => setComunidadeOpen(true)}
+              className="inline-block mt-4 px-8 py-4 border border-foreground/20 text-foreground/70 hover:border-accent-warm hover:text-accent-warm transition-all duration-400 font-medium tracking-wide text-sm"
+            >
+              Avise-me quando abrir →
+            </button>
+          )}
         </motion.div>
       </section>
 
