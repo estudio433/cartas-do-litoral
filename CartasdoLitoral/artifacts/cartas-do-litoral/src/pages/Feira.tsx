@@ -115,7 +115,7 @@ export default function Feira() {
                 </h1>
                 <p className="text-muted-foreground leading-relaxed">
                   Todo mês uma carta de Mel chega na sua caixa de correio —
-                  escrita sobre um novo lugar do litoral brasileiro. Com um
+                  escrita sobre um novo lugar do litoral catarinense. Com um
                   postcard ilustrado, um item colecionável, e algo que só
                   existe naquele lugar.
                 </p>
