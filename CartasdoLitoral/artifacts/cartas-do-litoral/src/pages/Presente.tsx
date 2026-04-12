@@ -68,7 +68,7 @@ export default function Presente() {
 
       {/* Hero */}
       <section className="pt-24 pb-20 px-6 bg-background">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <motion.div
             initial="hidden"
             animate="visible"
@@ -103,7 +103,7 @@ export default function Presente() {
                 Não é um presente que se usa e acaba. É uma história que chega
                 em casa todo mês durante um ano inteiro.
               </p>
-              <div className="border border-accent-warm/20 p-5 bg-secondary space-y-1 max-w-sm">
+              <div className="border border-accent-warm/20 p-5 bg-secondary space-y-1">
                 <p className="text-sm font-medium text-foreground">
                   Season 1 — Litoral Catarinense
                 </p>
