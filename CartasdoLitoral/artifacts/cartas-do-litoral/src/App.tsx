@@ -11,12 +11,13 @@ import Lugares from "@/pages/Lugares";
 import Comunidade from "@/pages/Comunidade";
 import Feira from "@/pages/Feira";
 import Presente from "@/pages/Presente";
+import PresenteOla from "@/pages/PresenteOla";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
 const queryClient = new QueryClient();
 
-const STANDALONE_ROUTES = ["/feira"];
+const STANDALONE_ROUTES = ["/feira", "/presente-ola"];
 
 function Layout() {
   const [location] = useLocation();
@@ -35,6 +36,7 @@ function Layout() {
           <Route path="/comunidade" component={Comunidade} />
           <Route path="/feira" component={Feira} />
           <Route path="/presente" component={Presente} />
+          <Route path="/presente-ola" component={PresenteOla} />
           <Route component={NotFound} />
         </Switch>
       </main>
