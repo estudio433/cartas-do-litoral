@@ -73,7 +73,7 @@ export default function Presente() {
             initial="hidden"
             animate="visible"
             variants={fadeIn}
-            className="flex flex-col md:flex-row gap-12 items-start"
+            className="flex flex-col md:flex-row gap-12 items-center"
           >
             {/* Image — left */}
             <div className="w-full md:w-5/12 shrink-0">
@@ -85,7 +85,7 @@ export default function Presente() {
             </div>
 
             {/* Text — right */}
-            <div className="flex-1 space-y-6 md:pt-8">
+            <div className="flex-1 space-y-6">
               <p className="text-xs uppercase tracking-widest text-accent-warm/70 font-semibold">
                 Um presente diferente
               </p>
