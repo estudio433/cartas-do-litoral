@@ -10,6 +10,7 @@ import Cartas from "@/pages/Cartas";
 import Lugares from "@/pages/Lugares";
 import Comunidade from "@/pages/Comunidade";
 import Feira from "@/pages/Feira";
+import Presente from "@/pages/Presente";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
@@ -33,6 +34,7 @@ function Layout() {
           <Route path="/lugares" component={Lugares} />
           <Route path="/comunidade" component={Comunidade} />
           <Route path="/feira" component={Feira} />
+          <Route path="/presente" component={Presente} />
           <Route component={NotFound} />
         </Switch>
       </main>
