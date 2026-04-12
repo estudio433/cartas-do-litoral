@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Link } from "wouter";
+import presenteImg from "@assets/Cartas_-_What_arrives_(17)_1775971951885.png";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -66,41 +67,53 @@ export default function Presente() {
     <div className="pt-20">
 
       {/* Hero */}
-      <section className="pt-32 pb-20 px-6 bg-background">
-        <div className="max-w-2xl mx-auto">
+      <section className="pt-24 pb-20 px-6 bg-background">
+        <div className="max-w-5xl mx-auto">
           <motion.div
             initial="hidden"
             animate="visible"
             variants={fadeIn}
-            className="space-y-6"
+            className="flex flex-col md:flex-row gap-12 items-start"
           >
-            <p className="text-xs uppercase tracking-widest text-accent-warm/70 font-semibold">
-              Um presente diferente
-            </p>
-            <h1 className="font-serif text-5xl text-foreground leading-tight">
-              A presente começa com uma carta.<br/>
-              Termina com uma história guardada.
-            </h1>
-            <p className="text-muted-foreground text-lg leading-relaxed max-w-xl">
-              Todo mês um envelope chega na caixa de correio de quem você
-              escolheu. Dentro — uma carta de Mel, um postcard ilustrado,
-              um item colecionável, e algo que só existe naquele lugar do
-              litoral brasileiro.
-            </p>
-            <p className="text-muted-foreground leading-relaxed max-w-xl">
-              Não é um presente que se usa e acaba. É uma história que chega
-              em casa todo mês durante um ano inteiro.
-            </p>
-            <div className="border border-accent-warm/20 p-5 bg-secondary space-y-1 max-w-sm">
-              <p className="text-sm font-medium text-foreground">
-                Season 1 — Litoral Catarinense
+            {/* Image — left */}
+            <div className="w-full md:w-5/12 shrink-0">
+              <img
+                src={presenteImg}
+                alt="Cartas do Litoral — envelope e conteúdo"
+                className="w-full object-contain"
+              />
+            </div>
+
+            {/* Text — right */}
+            <div className="flex-1 space-y-6 md:pt-8">
+              <p className="text-xs uppercase tracking-widest text-accent-warm/70 font-semibold">
+                Um presente diferente
               </p>
-              <p className="text-xs text-muted-foreground leading-relaxed">
-                12 cartas · 12 lugares · 1 ano completo · R$600
+              <h1 className="font-serif text-5xl text-foreground leading-tight">
+                A presente começa com uma carta.<br/>
+                Termina com uma história guardada.
+              </h1>
+              <p className="text-muted-foreground text-lg leading-relaxed">
+                Todo mês um envelope chega na caixa de correio de quem você
+                escolheu. Dentro — uma carta de Mel, um postcard ilustrado,
+                um item colecionável, e algo que só existe naquele lugar do
+                litoral brasileiro.
               </p>
-              <p className="text-xs text-accent-warm/70 font-medium tracking-wide uppercase">
-                Único plano disponível para presentes
+              <p className="text-muted-foreground leading-relaxed">
+                Não é um presente que se usa e acaba. É uma história que chega
+                em casa todo mês durante um ano inteiro.
               </p>
+              <div className="border border-accent-warm/20 p-5 bg-secondary space-y-1 max-w-sm">
+                <p className="text-sm font-medium text-foreground">
+                  Season 1 — Litoral Catarinense
+                </p>
+                <p className="text-xs text-muted-foreground leading-relaxed">
+                  12 cartas · 12 lugares · 1 ano completo · R$600
+                </p>
+                <p className="text-xs text-accent-warm/70 font-medium tracking-wide uppercase">
+                  Único plano disponível para presentes
+                </p>
+              </div>
             </div>
           </motion.div>
         </div>
