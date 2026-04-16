@@ -1,50 +1,121 @@
 {
   "pages": {
+    "/_not-found/page": [
+      "static/chunks/webpack-1017649d66d1259f.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-4f212684648fcab9.js",
+      "static/chunks/main-app-748412d4c83d8355.js",
+      "static/chunks/app/_not-found/page-d573ced642e13208.js"
+    ],
     "/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/layout.css",
-      "static/chunks/app/layout.js"
+      "static/chunks/webpack-1017649d66d1259f.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-4f212684648fcab9.js",
+      "static/chunks/main-app-748412d4c83d8355.js",
+      "static/css/1fed30665108a851.css",
+      "static/chunks/app/layout-c45534b1c8840fdc.js"
+    ],
+    "/api/subscribe/route": [
+      "static/chunks/webpack-1017649d66d1259f.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-4f212684648fcab9.js",
+      "static/chunks/main-app-748412d4c83d8355.js",
+      "static/chunks/app/api/subscribe/route-298ea11b97746682.js"
     ],
     "/(main)/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(main)/layout.js"
-    ],
-    "/(main)/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(main)/page.js"
-    ],
-    "/(main)/diario/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(main)/diario/page.js"
+      "static/chunks/webpack-1017649d66d1259f.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-4f212684648fcab9.js",
+      "static/chunks/main-app-748412d4c83d8355.js",
+      "static/chunks/924-0304f927a45aeb53.js",
+      "static/chunks/0-662476c4b7ee794e.js",
+      "static/chunks/917-9f5ccc7adc6e96b3.js",
+      "static/chunks/app/(main)/layout-e8a648fd7fd21e96.js"
     ],
     "/(main)/cartas/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(main)/cartas/page.js"
+      "static/chunks/webpack-1017649d66d1259f.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-4f212684648fcab9.js",
+      "static/chunks/main-app-748412d4c83d8355.js",
+      "static/chunks/924-0304f927a45aeb53.js",
+      "static/chunks/917-9f5ccc7adc6e96b3.js",
+      "static/chunks/app/(main)/cartas/page-eacab8584fd76673.js"
     ],
-    "/(standalone)/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(standalone)/layout.js"
+    "/(main)/comunidade/page": [
+      "static/chunks/webpack-1017649d66d1259f.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-4f212684648fcab9.js",
+      "static/chunks/main-app-748412d4c83d8355.js",
+      "static/chunks/924-0304f927a45aeb53.js",
+      "static/chunks/app/(main)/comunidade/page-d7b22c1ea09f7ab7.js"
     ],
-    "/(standalone)/feira/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(standalone)/feira/page.js"
+    "/(main)/diario/page": [
+      "static/chunks/webpack-1017649d66d1259f.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-4f212684648fcab9.js",
+      "static/chunks/main-app-748412d4c83d8355.js",
+      "static/chunks/924-0304f927a45aeb53.js",
+      "static/chunks/0-662476c4b7ee794e.js",
+      "static/chunks/app/(main)/diario/page-70fc40f7186cf73b.js"
+    ],
+    "/(main)/diario/[slug]/page": [
+      "static/chunks/webpack-1017649d66d1259f.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-4f212684648fcab9.js",
+      "static/chunks/main-app-748412d4c83d8355.js",
+      "static/chunks/924-0304f927a45aeb53.js",
+      "static/chunks/0-662476c4b7ee794e.js",
+      "static/chunks/app/(main)/diario/[slug]/page-d6ef6ada9fcb6c00.js"
     ],
     "/(main)/lugares/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(main)/lugares/page.js"
+      "static/chunks/webpack-1017649d66d1259f.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-4f212684648fcab9.js",
+      "static/chunks/main-app-748412d4c83d8355.js",
+      "static/chunks/924-0304f927a45aeb53.js",
+      "static/chunks/app/(main)/lugares/page-d3592f16e6e73bd9.js"
     ],
-    "/_not-found/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/_not-found/page.js"
+    "/(main)/page": [
+      "static/chunks/webpack-1017649d66d1259f.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-4f212684648fcab9.js",
+      "static/chunks/main-app-748412d4c83d8355.js",
+      "static/chunks/924-0304f927a45aeb53.js",
+      "static/chunks/0-662476c4b7ee794e.js",
+      "static/chunks/917-9f5ccc7adc6e96b3.js",
+      "static/chunks/app/(main)/page-e90370e39f071eca.js"
+    ],
+    "/(main)/presente/page": [
+      "static/chunks/webpack-1017649d66d1259f.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-4f212684648fcab9.js",
+      "static/chunks/main-app-748412d4c83d8355.js",
+      "static/chunks/924-0304f927a45aeb53.js",
+      "static/chunks/0-662476c4b7ee794e.js",
+      "static/chunks/app/(main)/presente/page-23db505a2b4a1f18.js"
+    ],
+    "/(standalone)/layout": [
+      "static/chunks/webpack-1017649d66d1259f.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-4f212684648fcab9.js",
+      "static/chunks/main-app-748412d4c83d8355.js",
+      "static/chunks/app/(standalone)/layout-298ea11b97746682.js"
+    ],
+    "/(standalone)/feira/page": [
+      "static/chunks/webpack-1017649d66d1259f.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-4f212684648fcab9.js",
+      "static/chunks/main-app-748412d4c83d8355.js",
+      "static/chunks/924-0304f927a45aeb53.js",
+      "static/chunks/app/(standalone)/feira/page-50a52c432254b1a4.js"
+    ],
+    "/(standalone)/presente-ola/page": [
+      "static/chunks/webpack-1017649d66d1259f.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-4f212684648fcab9.js",
+      "static/chunks/main-app-748412d4c83d8355.js",
+      "static/chunks/924-0304f927a45aeb53.js",
+      "static/chunks/app/(standalone)/presente-ola/page-3ce2b70697d58c97.js"
     ]
   }
 }

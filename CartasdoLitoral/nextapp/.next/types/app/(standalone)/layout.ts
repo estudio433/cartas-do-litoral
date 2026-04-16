@@ -1,4 +1,4 @@
-// File: /home/runner/workspace/CartasdoLitoral/nextapp/app/(standalone)/layout.tsx
+// File: C:\Users\user\Cartas do Litoral - VS\cartas-do-litoral\CartasdoLitoral\nextapp\app\(standalone)\layout.tsx
 import * as entry from '../../../../app/(standalone)/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

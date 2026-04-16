@@ -1,16 +1,16 @@
 "use client";
 
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { PenLine, Mail, BookOpen } from "lucide-react";
 import WaitlistModal from "@/components/WaitlistModal";
 
 const cartasImage = "/images/Cartas_-_What_arrives_1775458325566.png";
 const heroCartasImage = "/images/Cartas_do_litoral_landing_page_(20)_1775766669174.png";
 
-const fadeIn = {
+const fadeIn: Variants = {
   hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
+  visible: { opacity: 1, y: 0, transition: { duration: 0.8 } }
 };
 
 const steps = [
