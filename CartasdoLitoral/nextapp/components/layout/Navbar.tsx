@@ -22,6 +22,9 @@ export default function Navbar() {
           <Link href="/lugares" className="text-white/70 hover:text-white transition-colors duration-300">
             Lugares
           </Link>
+          <Link href="/presente" className="text-white/70 hover:text-white transition-colors duration-300">
+            Presente
+          </Link>
           <Link href="/cartas" className="text-white/70 hover:text-white transition-colors duration-300">
             Assinar carta
           </Link>
@@ -49,6 +52,9 @@ export default function Navbar() {
               </Link>
               <Link href="/lugares" className="text-lg text-white/80 hover:text-white transition-colors" onClick={() => setIsOpen(false)}>
                 Lugares
+              </Link>
+              <Link href="/presente" className="text-lg text-white/80 hover:text-white transition-colors" onClick={() => setIsOpen(false)}>
+                Presente
               </Link>
               <Link href="/cartas" className="text-lg text-white/80 hover:text-white transition-colors" onClick={() => setIsOpen(false)}>
                 Assinar carta
