@@ -1,0 +1,8 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/(main)/page": "app/(main)/page.js",
+  "/(main)/diario/page": "app/(main)/diario/page.js",
+  "/(main)/cartas/page": "app/(main)/cartas/page.js",
+  "/(standalone)/feira/page": "app/(standalone)/feira/page.js",
+  "/(main)/lugares/page": "app/(main)/lugares/page.js"
+}
