@@ -146,7 +146,7 @@ export default function LandingPage() {
       </section>
 
       {/* 2b. COMPOSITE VISUAL */}
-      <section className="bg-[#1f3a44] py-8 px-4 flex justify-center items-center overflow-hidden">
+      <section className="bg-[#1f3a44] py-6 px-0 flex justify-center items-center overflow-hidden">
         <motion.img
           src={landingCompositeImage}
           alt="Como funciona a Cartas do Litoral"
@@ -154,8 +154,8 @@ export default function LandingPage() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.9 }}
-          className="w-full max-w-6xl object-contain"
-          style={{ minHeight: '300px' }}
+          className="w-full max-w-6xl object-contain mx-auto block"
+          style={{ minHeight: '280px', width: '100%' }}
         />
       </section>
 
