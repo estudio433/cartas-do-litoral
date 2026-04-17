@@ -61,8 +61,8 @@ export default function Cartas() {
           src={melCartasVideo}
         />
         <div className="absolute inset-0 bg-[#1f3a44]/20" />
-        <div className="absolute inset-0 flex items-center justify-end pr-12 md:pr-24">
-          <div className="text-right space-y-3 max-w-xs">
+        <div className="absolute inset-0 flex items-end md:items-center justify-center md:justify-end pb-10 md:pb-0 md:pr-16 px-6 md:px-0">
+          <div className="text-center md:text-right space-y-2 md:space-y-3 max-w-sm">
             <motion.p
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
@@ -77,7 +77,7 @@ export default function Cartas() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.2, duration: 1 }}
               style={{ fontFamily: "'Caveat', cursive" }}
-              className="text-white/80 text-xl md:text-2xl"
+              className="text-white/80 text-lg md:text-2xl leading-snug"
             >
               Escrevo sobre as minhas experiências no litoral catarinense.
             </motion.p>
@@ -86,7 +86,7 @@ export default function Cartas() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 2, duration: 1 }}
               style={{ fontFamily: "'Caveat', cursive" }}
-              className="text-white/80 text-xl md:text-2xl"
+              className="text-white/80 text-lg md:text-2xl"
             >
               E mando uma carta especial para vocês.
             </motion.p>
