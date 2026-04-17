@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion, type Variants } from "framer-motion";
 import { PenLine, Mail, BookOpen } from "lucide-react";
+import Link from "next/link";
 import WaitlistModal from "@/components/WaitlistModal";
 
 const cartasImage = "/images/Cartas_-_What_arrives_1775458325566.png";
@@ -19,11 +20,27 @@ const steps = [
   { num: "03", icon: BookOpen, label: "Acompanha a jornada da Mel", desc: "A história continua além do papel, com conteúdos que se desdobram com o tempo." }
 ];
 
-const faq = [
-  { q: "Quando recebo a primeira carta?", r: "As cartas são enviadas mensalmente. Você receberá a primeira carta do ciclo vigente logo após a confirmação da assinatura." },
-  { q: "Posso cancelar quando quiser?", r: "Sim. Assinantes mensais podem cancelar a qualquer momento, sem taxa." },
-  { q: "Para onde as cartas são enviadas?", r: "Para qualquer endereço no Brasil, via Correios." },
-  { q: "O conteúdo digital está incluso?", r: "Sim. Junto com a carta física, você recebe acesso a conteúdos extras — áudios, fotos e anotações da Mel." }
+const faqs = [
+  {
+    q: "Quando recebo a primeira carta?",
+    a: "Se a sua assinatura for confirmada até o dia 9 do mês, a carta parte neste mês. Se for após o dia 9, parte no mês seguinte. Despachamos entre os dias 10 e 15 de cada mês."
+  },
+  {
+    q: "Posso cancelar quando quiser?",
+    a: "Sim. Assinantes mensais podem cancelar a qualquer momento. Para não receber a carta daquele mês, cancele até o dia 8."
+  },
+  {
+    q: "Para onde as cartas são enviadas?",
+    a: "Para qualquer endereço no Brasil via Correios. A primeira carta é enviada com rastreamento."
+  },
+  {
+    q: "O que chega dentro do envelope?",
+    a: "A carta de Mel (3 páginas em papel premium), um postcard ilustrado, um item colecionável, uma playlist via QR code, e algo especial daquele lugar do litoral."
+  },
+  {
+    q: "Tenho mais dúvidas.",
+    a: "Visite a nossa página de perguntas frequentes ou escreva para ola@cartasdolitoral.com.br."
+  }
 ];
 
 export default function Cartas() {
@@ -123,12 +140,15 @@ export default function Cartas() {
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn}>
             <h2 className="font-serif text-4xl mb-16 text-center">Perguntas frequentes</h2>
             <div className="space-y-12">
-              {faq.map((item, i) => (
+              {faqs.map((item, i) => (
                 <div key={i} className="border-b border-foreground/10 pb-12 last:border-0 last:pb-0">
                   <p className="font-serif text-xl text-foreground mb-4">{item.q}</p>
-                  <p className="text-muted-foreground leading-relaxed">{item.r}</p>
+                  <p className="text-muted-foreground leading-relaxed">{item.a}</p>
                 </div>
               ))}
+            </div>
+            <div className="mt-12 text-center">
+              <Link href="/faq" className="text-accent-warm hover:text-accent-warm/80 transition-colors">Ver todas as perguntas frequentes</Link>
             </div>
           </motion.div>
         </div>
