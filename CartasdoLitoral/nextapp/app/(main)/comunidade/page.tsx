@@ -24,7 +24,24 @@ export default function Comunidade() {
               <p className="text-xs uppercase tracking-widest text-foreground/40 font-semibold">Acesso por convite</p>
               <form className="flex flex-col sm:flex-row gap-3 justify-center" onSubmit={(e) => e.preventDefault()}>
                 <input type="email" placeholder="Seu email para a lista de espera" className="flex-1 max-w-xs px-6 py-4 bg-secondary border-none focus:outline-none focus:ring-1 focus:ring-accent-warm text-foreground placeholder:text-muted-foreground/50 transition-shadow text-sm" required />
+                <div className="w-full">
+                <p className="text-xs text-muted-foreground/50 text-center leading-relaxed mb-3">
+                  Ao se inscrever, você concorda com nossa{" "}
+                  <a href="/privacidade" className="underline hover:text-accent-warm transition-colors">
+                    política de privacidade
+                  </a>
+                  {" "}e com os{" "}
+                  <a href="https://beehiiv.com/tou" target="_blank" className="underline hover:text-accent-warm transition-colors">
+                    termos de uso
+                  </a>
+                  {" "}e{" "}
+                  <a href="https://beehiiv.com/privacy" target="_blank" className="underline hover:text-accent-warm transition-colors">
+                    política de privacidade
+                  </a>
+                  {" "}da Beehiiv.
+                </p>
                 <button type="submit" className="px-8 py-4 border border-foreground/30 text-foreground/70 hover:border-accent-warm hover:text-accent-warm transition-all duration-400 font-medium tracking-wide text-sm whitespace-nowrap">Entrar com convite</button>
+              </div>
               </form>
             </div>
           </motion.div>

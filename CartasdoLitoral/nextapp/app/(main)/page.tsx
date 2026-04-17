@@ -226,6 +226,21 @@ export default function LandingPage() {
                 <input type="email" placeholder="Seu melhor email" value={email} onChange={(e) => setEmail(e.target.value)} className="flex-1 px-6 py-4 bg-secondary border-none focus:outline-none focus:ring-1 focus:ring-accent-warm text-foreground placeholder:text-muted-foreground/50 transition-shadow" required />
               </div>
               {formState === "error" && <p className="text-sm text-red-500 text-left px-1">Algo correu mal. Tente novamente.</p>}
+              <p className="text-xs text-muted-foreground/50 text-center leading-relaxed mb-3">
+                Ao se inscrever, você concorda com nossa{" "}
+                <a href="/privacidade" className="underline hover:text-accent-warm transition-colors">
+                  política de privacidade
+                </a>
+                {" "}e com os{" "}
+                <a href="https://beehiiv.com/tou" target="_blank" className="underline hover:text-accent-warm transition-colors">
+                  termos de uso
+                </a>
+                {" "}e{" "}
+                <a href="https://beehiiv.com/privacy" target="_blank" className="underline hover:text-accent-warm transition-colors">
+                  política de privacidade
+                </a>
+                {" "}da Beehiiv.
+              </p>
               <button type="submit" disabled={formState === "loading"} className="w-full sm:w-auto px-8 py-4 bg-foreground text-white hover:bg-foreground/90 transition-colors font-medium tracking-wide whitespace-nowrap disabled:opacity-60">
                 {formState === "loading" ? "Enviando..." : "Quero acompanhar"}
               </button>
@@ -371,9 +386,26 @@ export default function LandingPage() {
           ) : comunidadeOpen ? (
             <motion.form initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }} onSubmit={handleComunidadeSubmit} className="flex flex-col sm:flex-row gap-3 pt-2">
               <input type="email" placeholder="Seu melhor email" value={comunidadeEmail} onChange={(e) => setComunidadeEmail(e.target.value)} className="flex-1 px-6 py-4 bg-secondary border-none focus:outline-none focus:ring-1 focus:ring-accent-warm text-foreground placeholder:text-muted-foreground/50 transition-shadow text-sm" required autoFocus />
-              <button type="submit" disabled={comunidadeState === "loading"} className="px-8 py-4 bg-foreground text-white hover:bg-foreground/90 transition-colors font-medium tracking-wide text-sm whitespace-nowrap disabled:opacity-60">
-                {comunidadeState === "loading" ? "Enviando..." : "Entrar na lista →"}
-              </button>
+              <div className="flex flex-col">
+                <p className="text-xs text-muted-foreground/50 text-center leading-relaxed mb-3">
+                  Ao se inscrever, você concorda com nossa{" "}
+                  <a href="/privacidade" className="underline hover:text-accent-warm transition-colors">
+                    política de privacidade
+                  </a>
+                  {" "}e com os{" "}
+                  <a href="https://beehiiv.com/tou" target="_blank" className="underline hover:text-accent-warm transition-colors">
+                    termos de uso
+                  </a>
+                  {" "}e{" "}
+                  <a href="https://beehiiv.com/privacy" target="_blank" className="underline hover:text-accent-warm transition-colors">
+                    política de privacidade
+                  </a>
+                  {" "}da Beehiiv.
+                </p>
+                <button type="submit" disabled={comunidadeState === "loading"} className="px-8 py-4 bg-foreground text-white hover:bg-foreground/90 transition-colors font-medium tracking-wide text-sm whitespace-nowrap disabled:opacity-60">
+                  {comunidadeState === "loading" ? "Enviando..." : "Entrar na lista →"}
+                </button>
+              </div>
             </motion.form>
           ) : (
             <button onClick={() => setComunidadeOpen(true)} className="px-8 py-4 border border-foreground/30 text-foreground/70 hover:border-accent-warm hover:text-accent-warm transition-all font-medium tracking-wide text-sm">

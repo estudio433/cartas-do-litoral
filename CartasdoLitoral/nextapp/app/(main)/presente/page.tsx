@@ -151,6 +151,21 @@ export default function Presente() {
                   <textarea name="message" placeholder="Escreva algo para quem vai receber..." value={form.message} onChange={handleChange} rows={4} className="w-full px-5 py-4 bg-secondary border-none focus:outline-none focus:ring-1 focus:ring-accent-warm text-foreground placeholder:text-muted-foreground/50 text-sm resize-none" />
                 </div>
                 {formState === "error" && <p className="text-sm text-red-500">Algo correu mal. Tente novamente.</p>}
+                <p className="text-xs text-muted-foreground/50 text-center leading-relaxed mb-3">
+                  Ao se inscrever, você concorda com nossa{" "}
+                  <a href="/privacidade" className="underline hover:text-accent-warm transition-colors">
+                    política de privacidade
+                  </a>
+                  {" "}e com os{" "}
+                  <a href="https://beehiiv.com/tou" target="_blank" className="underline hover:text-accent-warm transition-colors">
+                    termos de uso
+                  </a>
+                  {" "}e{" "}
+                  <a href="https://beehiiv.com/privacy" target="_blank" className="underline hover:text-accent-warm transition-colors">
+                    política de privacidade
+                  </a>
+                  {" "}da Beehiiv.
+                </p>
                 <button type="submit" disabled={formState === "loading"} className="w-full px-8 py-4 bg-foreground text-white hover:bg-foreground/90 transition-colors font-medium tracking-wide disabled:opacity-50">
                   {formState === "loading" ? "Registrando o presente..." : "Registrar presente →"}
                 </button>
