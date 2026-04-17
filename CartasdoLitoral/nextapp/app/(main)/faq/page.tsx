@@ -40,7 +40,7 @@ const faqs = [
     categoria: "A história",
     perguntas: [
       { q: "Quem é a Mel?", a: "Mel é Amélia — uma personagem que largou tudo aos 37 anos e foi viver no litoral catarinense. Ela escreve cartas mensais para a melhor amiga dela, a Ju. Você é a Ju." },
-      { q: "Posso entrar no meio da história?", a: "Sim. Cada carta conta um mês da jornada da Mel. Se você entrar no mês 6, receberá a partir do mês 6." },
+      { q: "Posso entrar no meio da história?", a: "Não — e isso é intencional. Cada novo assinante começa do Mês 01, independentemente de quando assinar. A história da Mel começa sempre pelo início. Você vai receber as cartas em ordem, do começo ao fim." },
       { q: "Quantas cartas existem no total?", a: "A Season 1 tem 24 cartas — 2 anos de história, percorrendo o litoral catarinense de julho de 2026 a junho de 2028." }
     ]
   }
