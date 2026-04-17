@@ -51,56 +51,17 @@ export default function Cartas() {
 
   return (
     <div className="pt-20">
-      <section className="relative w-full overflow-hidden" style={{ height: '70vh', minHeight: '400px' }}>
+      <section className="relative w-full overflow-hidden" style={{ maxHeight: "520px" }}>
         <video
           autoPlay
           muted
           loop
           playsInline
-          className="absolute inset-0 w-full h-full object-cover"
+          className="w-full object-cover"
+          style={{ maxHeight: "520px" }}
           src={melCartasVideo}
         />
-        <div className="absolute inset-0 bg-[#1f3a44]/20" />
-        <div className="absolute inset-0 flex items-end md:items-center justify-center md:justify-end pb-10 md:pb-0 md:pr-16 px-6 md:px-0">
-          <div className="text-center md:text-right space-y-2 md:space-y-3 max-w-sm">
-            <motion.p
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5, duration: 1 }}
-              style={{ fontFamily: "'Caveat', cursive" }}
-              className="text-white/90 text-2xl md:text-3xl"
-            >
-              Sou a Mel.
-            </motion.p>
-            <motion.p
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1.2, duration: 1 }}
-              style={{ fontFamily: "'Caveat', cursive" }}
-              className="text-white/80 text-lg md:text-2xl leading-snug"
-            >
-              Escrevo sobre as minhas experiências no litoral catarinense.
-            </motion.p>
-            <motion.p
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 2, duration: 1 }}
-              style={{ fontFamily: "'Caveat', cursive" }}
-              className="text-white/80 text-lg md:text-2xl"
-            >
-              E mando uma carta especial para vocês.
-            </motion.p>
-            <motion.p
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 2.8, duration: 1 }}
-              style={{ fontFamily: "'Caveat', cursive" }}
-              className="text-white/90 text-2xl md:text-3xl"
-            >
-              Cada mês :)
-            </motion.p>
-          </div>
-        </div>
+        <div className="absolute inset-0 bg-[#1f3a44]/10" />
       </section>
 
       <section className="py-32 px-6 bg-background">
