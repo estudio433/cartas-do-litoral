@@ -16,7 +16,7 @@ const faqs = [
       { q: "Assinei hoje. Quando recebo a primeira carta?", a: "Se a sua assinatura foi confirmada até o dia 9, a sua primeira carta parte neste mês. Se foi confirmada no dia 10 ou depois, a sua primeira carta parte no mês seguinte." },
       { q: "Vou receber um código de rastreamento?", a: "A sua primeira carta é enviada com rastreamento pelos Correios — você receberá o código por email. As cartas seguintes são enviadas via correio padrão." },
       { q: "Vocês entregam para todo o Brasil?", a: "Sim — despachamos para todo o Brasil via Correios." },
-      { q: "Não recebi a minha carta. O que faço?", a: "Se o prazo de entrega já passou, entre em contato em ola@cartasdolitoral.com.br com: nome completo, endereço de entrega, número do mês da carta em falta, e email usado na assinatura. Respondemos em até 3 dias úteis." }
+      { q: "Não recebi a minha carta. O que faço?", a: "Se o prazo de entrega já passou, entre em contato em oi@cartasdolitoral.com.br com: nome completo, endereço de entrega, número do mês da carta em falta, e email usado na assinatura. Respondemos em até 3 dias úteis." }
     ]
   },
   {
@@ -25,7 +25,7 @@ const faqs = [
       { q: "Posso cancelar quando quiser?", a: "Sim. Você pode cancelar a qualquer momento. Para não receber a carta daquele mês, cancele até o dia 8. Cancelamentos após o dia 8 ainda recebem a carta daquele mês." },
       { q: "O que chega dentro do envelope?", a: "Cada envelope contém: a carta de Mel (3 páginas impressas em papel premium), um postcard ilustrado do destino do mês, um item colecionável, uma playlist via QR code, e algo especial daquele lugar." },
       { q: "Qual é a diferença entre o plano mensal e o anual?", a: "O plano mensal é cobrado todo mês e pode ser cancelado a qualquer momento. O plano anual oferece melhor valor — você paga por 12 meses e recebe as 12 cartas da Season 1 completa." },
-      { q: "Posso pausar a minha assinatura?", a: "Por enquanto não oferecemos pausa — apenas cancelamento. Entre em contato em ola@cartasdolitoral.com.br se precisar de ajuda." }
+      { q: "Posso pausar a minha assinatura?", a: "Por enquanto não oferecemos pausa — apenas cancelamento. Entre em contato em oi@cartasdolitoral.com.br se precisar de ajuda." }
     ]
   },
   {
@@ -86,7 +86,7 @@ export default function FAQ() {
 
         <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn} className="mt-20 pt-12 border-t border-foreground/10 text-center">
           <p className="text-muted-foreground mb-4">Não encontrou o que procurava?</p>
-          <a href="mailto:ola@cartasdolitoral.com.br" className="text-accent-warm font-medium hover:text-accent-warm/80 transition-colors">ola@cartasdolitoral.com.br</a>
+          <a href="mailto:oi@cartasdolitoral.com.br" className="text-accent-warm font-medium hover:text-accent-warm/80 transition-colors">oi@cartasdolitoral.com.br</a>
         </motion.div>
       </div>
     </div>

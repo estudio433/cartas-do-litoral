@@ -47,17 +47,17 @@ export default function Privacidade() {
               <li>Solicitar a exclusão dos seus dados</li>
               <li>Revogar o consentimento a qualquer momento</li>
             </ul>
-            <p className="mt-3">Para exercer esses direitos, entre em contato: <a href="mailto:ola@cartasdolitoral.com.br" className="underline hover:text-accent-warm transition-colors">ola@cartasdolitoral.com.br</a></p>
+            <p className="mt-3">Para exercer esses direitos, entre em contato: <a href="mailto:oi@cartasdolitoral.com.br" className="underline hover:text-accent-warm transition-colors">oi@cartasdolitoral.com.br</a></p>
           </section>
 
           <section>
             <h2 className="font-serif text-2xl text-foreground mb-4">6. Cancelamento</h2>
-            <p>Você pode cancelar sua inscrição a qualquer momento clicando em "cancelar inscrição" no rodapé de qualquer email nosso, ou enviando um email para ola@cartasdolitoral.com.br.</p>
+            <p>Você pode cancelar sua inscrição a qualquer momento clicando em "cancelar inscrição" no rodapé de qualquer email nosso, ou enviando um email para oi@cartasdolitoral.com.br.</p>
           </section>
 
           <section>
             <h2 className="font-serif text-2xl text-foreground mb-4">7. Contato</h2>
-            <p>Dúvidas sobre esta política? Entre em contato: <a href="mailto:ola@cartasdolitoral.com.br" className="underline hover:text-accent-warm transition-colors">ola@cartasdolitoral.com.br</a></p>
+            <p>Dúvidas sobre esta política? Entre em contato: <a href="mailto:oi@cartasdolitoral.com.br" className="underline hover:text-accent-warm transition-colors">oi@cartasdolitoral.com.br</a></p>
           </section>
 
         </div>
