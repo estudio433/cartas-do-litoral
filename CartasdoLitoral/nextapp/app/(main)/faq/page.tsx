@@ -31,7 +31,7 @@ const faqs = [
   {
     categoria: "Presente",
     perguntas: [
-      { q: "Como funciona a assinatura de presente?", a: "Você escolhe quantos meses quer oferecer e indica o endereço da pessoa presenteada. A contagem começa no primeiro despacho após a confirmação do pagamento." },
+      { q: "Como funciona a assinatura de presente?", a: "A assinatura de presente é oferecida no plano anual — 12 cartas, uma por mês. Você indica o endereço da pessoa presenteada e pode incluir uma mensagem pessoal no primeiro envelope. A contagem dos 12 meses começa no primeiro despacho após a confirmação do pagamento." },
       { q: "A pessoa presenteada vai saber quem deu o presente?", a: "Sim — se você quiser. No primeiro envelope há um cartão especial onde pode incluir uma mensagem pessoal." },
       { q: "Posso dar de presente para alguém fora do Brasil?", a: "Por enquanto despachamos apenas para endereços no Brasil." }
     ]
