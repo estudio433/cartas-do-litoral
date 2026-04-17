@@ -145,18 +145,21 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* 2b. COMPOSITE VISUAL */}
-      <section className="bg-[#1f3a44] py-6 px-0 flex justify-center items-center overflow-hidden">
-        <motion.img
-          src={landingCompositeImage}
-          alt="Como funciona a Cartas do Litoral"
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.9 }}
-          className="w-full max-w-6xl object-contain mx-auto block"
-          style={{ minHeight: '280px', width: '100%' }}
+      {/* 2b. MEL VIDEO */}
+      <section className="bg-[#1f3a44] relative overflow-hidden" style={{ height: '70vh', minHeight: '400px' }}>
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+          src="/Cartas_do_litoral_video.mp4"
         />
+        <div className="absolute inset-0 bg-[#1f3a44]/30" />
+        <div className="absolute inset-0 flex flex-col items-center justify-end pb-16 text-center px-6">
+          <p className="font-serif text-white/90 text-2xl md:text-3xl italic mb-3">E então ela foi.</p>
+          <p className="font-serif text-white/70 text-lg italic">Todo mês, uma carta do litoral até você.</p>
+        </div>
       </section>
 
       {/* 3. EMAIL CAPTURE */}
