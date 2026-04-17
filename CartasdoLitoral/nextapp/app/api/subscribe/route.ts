@@ -9,8 +9,12 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Email required" }, { status: 400 });
     }
 
+    const pubId = process.env.BEEHIIV_PUBLICATION_ID?.startsWith('pub_') 
+      ? process.env.BEEHIIV_PUBLICATION_ID 
+      : `pub_${process.env.BEEHIIV_PUBLICATION_ID}`;
+
     const response = await fetch(
-      `https://api.beehiiv.com/v2/publications/${process.env.BEEHIIV_PUBLICATION_ID}/subscriptions`,
+      `https://api.beehiiv.com/v2/publications/${pubId}/subscriptions`,
       {
         method: "POST",
         headers: {
