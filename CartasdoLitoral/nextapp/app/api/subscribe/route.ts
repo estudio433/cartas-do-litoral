@@ -13,7 +13,7 @@ export async function POST(request: NextRequest) {
     }
 
     const response = await fetch(
-      `https://api.beehiiv.com/v2/publications/${process.env.BEEHIIV_PUBLICATION_ID}/subscriptions`,
+      `https://api.beehiiv.com/v2/publications/pub_df6dbc44-6050-475f-9116-cbaeb5a30332/subscriptions`,
       {
         method: "POST",
         headers: {
