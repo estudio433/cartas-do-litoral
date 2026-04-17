@@ -3,7 +3,7 @@ export const posts = [
     slug: "a-ilha-que-aparece-do-ceu",
     title: "A ilha que aparece do céu",
     location: "Florianópolis",
-    month: "Janeiro",
+    month: "Julho",
     category: "Ilhas",
     excerpt: "Vista de cima, Florianópolis parece um sonho suspenso entre o mar e a serra.\nCheguei numa manhã nublada e entendi por que dizem que a ilha aparece.",
     body: [
