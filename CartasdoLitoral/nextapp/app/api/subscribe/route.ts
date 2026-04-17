@@ -5,6 +5,9 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     const { email, firstName, tags, custom_fields } = body;
 
+    console.log("PUBLICATION_ID:", process.env.BEEHIIV_PUBLICATION_ID);
+    console.log("API_KEY exists:", !!process.env.BEEHIIV_API_KEY);
+
     if (!email) {
       return NextResponse.json({ error: "Email required" }, { status: 400 });
     }

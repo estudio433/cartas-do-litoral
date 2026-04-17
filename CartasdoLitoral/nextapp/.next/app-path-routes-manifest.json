@@ -1,13 +1,15 @@
 {
   "/_not-found/page": "/_not-found",
   "/api/subscribe/route": "/api/subscribe",
+  "/sitemap.xml/route": "/sitemap.xml",
+  "/privacidade/page": "/privacidade",
   "/(main)/cartas/page": "/cartas",
   "/(main)/comunidade/page": "/comunidade",
-  "/(main)/diario/page": "/diario",
   "/(main)/diario/[slug]/page": "/diario/[slug]",
-  "/(main)/lugares/page": "/lugares",
+  "/(main)/diario/page": "/diario",
   "/(main)/page": "/",
-  "/(main)/presente/page": "/presente",
   "/(standalone)/feira/page": "/feira",
+  "/(main)/lugares/page": "/lugares",
+  "/(main)/presente/page": "/presente",
   "/(standalone)/presente-ola/page": "/presente-ola"
 }
