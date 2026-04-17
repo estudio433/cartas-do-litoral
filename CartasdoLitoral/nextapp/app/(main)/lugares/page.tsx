@@ -33,8 +33,16 @@ export default function Lugares() {
 
   return (
     <div className="pt-20">
-      <div className="w-full">
-        <img src={heroImg} alt="Lugares" className="w-full object-cover" style={{ maxHeight: "520px" }} />
+      <div className="w-full relative" style={{ maxHeight: "520px", overflow: "hidden" }}>
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="w-full object-cover"
+          style={{ maxHeight: "520px" }}
+          src="/images/Mel-Walking-Santo-Antonio.mp4"
+        />
       </div>
 
       <section className="pt-16 pb-16 px-6 bg-background">
