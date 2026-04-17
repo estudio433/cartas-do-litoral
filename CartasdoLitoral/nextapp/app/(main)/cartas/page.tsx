@@ -61,6 +61,46 @@ export default function Cartas() {
           src={melCartasVideo}
         />
         <div className="absolute inset-0 bg-[#1f3a44]/20" />
+        <div className="absolute inset-0 flex items-center justify-end pr-12 md:pr-24">
+          <div className="text-right space-y-3 max-w-xs">
+            <motion.p
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5, duration: 1 }}
+              style={{ fontFamily: "'Caveat', cursive" }}
+              className="text-white/90 text-2xl md:text-3xl"
+            >
+              Sou a Mel.
+            </motion.p>
+            <motion.p
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1.2, duration: 1 }}
+              style={{ fontFamily: "'Caveat', cursive" }}
+              className="text-white/80 text-xl md:text-2xl"
+            >
+              Escrevo sobre as minhas experiências no litoral catarinense.
+            </motion.p>
+            <motion.p
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 2, duration: 1 }}
+              style={{ fontFamily: "'Caveat', cursive" }}
+              className="text-white/80 text-xl md:text-2xl"
+            >
+              E mando uma carta especial para vocês.
+            </motion.p>
+            <motion.p
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 2.8, duration: 1 }}
+              style={{ fontFamily: "'Caveat', cursive" }}
+              className="text-white/90 text-2xl md:text-3xl"
+            >
+              Cada mês :)
+            </motion.p>
+          </div>
+        </div>
       </section>
 
       <section className="py-32 px-6 bg-background">
