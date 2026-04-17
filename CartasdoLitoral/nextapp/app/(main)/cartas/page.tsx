@@ -8,6 +8,7 @@ import WaitlistModal from "@/components/WaitlistModal";
 
 const cartasImage = "/images/Cartas_-_What_arrives_1775458325566.png";
 const heroCartasImage = "/images/Cartas_do_litoral_landing_page_(20)_1775766669174.png";
+const melCartasVideo = "/images/Mel-Cartas.mp4";
 
 const fadeIn: Variants = {
   hidden: { opacity: 0, y: 20 },
@@ -50,8 +51,16 @@ export default function Cartas() {
 
   return (
     <div className="pt-20">
-      <section className="bg-[#1f3a44] flex justify-center items-center overflow-hidden">
-        <motion.img src={heroCartasImage} alt="O que chega na sua caixa de correio" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9, ease: "easeOut" }} className="w-full h-auto" />
+      <section className="relative w-full overflow-hidden" style={{ height: '70vh', minHeight: '400px' }}>
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+          src={melCartasVideo}
+        />
+        <div className="absolute inset-0 bg-[#1f3a44]/20" />
       </section>
 
       <section className="py-32 px-6 bg-background">
