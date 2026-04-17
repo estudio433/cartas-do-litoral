@@ -153,7 +153,7 @@ export default function LandingPage() {
           loop
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
-          src="/Cartas_do_litoral_video.mp4"
+          src="/images/Cartas_do_litoral_video.mp4"
         />
         <div className="absolute inset-0 bg-[#1f3a44]/30" />
         <div className="absolute inset-0 flex flex-col items-center justify-end pb-16 text-center px-6">
