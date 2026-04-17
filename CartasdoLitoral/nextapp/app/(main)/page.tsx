@@ -111,20 +111,55 @@ export default function LandingPage() {
             </div>
           </div>
           <motion.div initial="hidden" animate="visible" variants={fadeIn} className="relative z-10 max-w-md w-full">
-            <h1 className="text-4xl lg:text-5xl/tight font-serif text-foreground mb-8">
-              CONTINUE A HISTÓRIA<br/>COM A MEL
-            </h1>
-            <div className="text-lg/relaxed text-muted-foreground mb-12 flex flex-col gap-1">
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0, duration: 0.8 }}
+              className="text-4xl lg:text-5xl/tight font-serif text-foreground"
+            >
+              CONTINUE A HISTÓRIA
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.4, duration: 0.8 }}
+              className="text-4xl lg:text-5xl/tight font-serif text-foreground mb-8"
+            >
+              COM A MEL
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.8, duration: 0.8 }}
+              className="text-lg/relaxed text-muted-foreground flex flex-col gap-1"
+            >
               <span>Uma carta por mês</span>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1.2, duration: 0.8 }}
+              className="text-lg/relaxed text-muted-foreground flex flex-col gap-1"
+            >
               <span>Um novo lugar do litoral</span>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1.6, duration: 0.8 }}
+              className="text-lg/relaxed text-muted-foreground mb-12 flex flex-col gap-1"
+            >
               <span>Para ler com calma</span>
-            </div>
-            <button
+            </motion.div>
+            <motion.button
               onClick={() => openModal("anual")}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 2.0, duration: 0.8 }}
               className="px-8 py-4 border border-accent-warm text-accent-warm hover:bg-accent-warm hover:text-white transition-all duration-500 font-medium tracking-wide"
             >
               Receber a primeira carta
-            </button>
+            </motion.button>
           </motion.div>
         </div>
       </section>
