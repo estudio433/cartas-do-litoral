@@ -78,7 +78,14 @@ export default function LandingPage() {
       {/* 1. HERO */}
       <section className="min-h-[calc(100vh-5rem)] flex flex-col lg:flex-row relative overflow-hidden">
         <div className="lg:w-1/2 w-full h-[50vh] lg:h-auto relative">
-          <img src={heroImage} alt="Mel caminhando na praia" className="w-full h-full object-cover" />
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-full object-cover"
+            src="/images/mel-hero-video.mp4"
+          />
         </div>
         <div className="lg:w-1/2 w-full bg-background relative flex items-center justify-center p-8 lg:p-20 overflow-hidden">
           <div className="absolute left-0 top-1/3 -translate-y-1/2 w-full pointer-events-none opacity-30 text-accent-green">
