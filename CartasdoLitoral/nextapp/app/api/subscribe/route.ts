@@ -5,15 +5,12 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     const { email, firstName, tags, custom_fields } = body;
 
-    console.log("PUBLICATION_ID:", process.env.BEEHIIV_PUBLICATION_ID);
-    console.log("API_KEY exists:", !!process.env.BEEHIIV_API_KEY);
-
     if (!email) {
       return NextResponse.json({ error: "Email required" }, { status: 400 });
     }
 
     const response = await fetch(
-      `https://api.beehiiv.com/v2/publications/pub_df6dbc44-6050-475f-9116-cbaeb5a30332/subscriptions`,
+      `https://api.beehiiv.com/v2/publications/${process.env.BEEHIIV_PUBLICATION_ID}/subscriptions`,
       {
         method: "POST",
         headers: {
