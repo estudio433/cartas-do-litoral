@@ -41,7 +41,7 @@ export default function Lugares() {
           playsInline
           className="w-full object-cover"
           style={{ maxHeight: "520px" }}
-          src="/images/Mel-Walking-Santo-Antonio.mp4"
+          src="/images/Mel_Fishing_Village_Lugares.mp4"
         />
       </div>
 
