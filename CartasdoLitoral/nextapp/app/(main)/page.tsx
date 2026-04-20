@@ -169,7 +169,7 @@ export default function LandingPage() {
         <div className="max-w-4xl mx-auto">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={fadeIn} className="flex flex-col md:flex-row items-center gap-16">
             <div className="w-64 shrink-0 rotate-2 bg-white p-4 shadow-xl">
-              <img src={melImage} alt="Mel escrevendo uma carta" className="aspect-[3/4] w-full object-cover" />
+              <img src="/images/Mel_Pousada_Sunset_Interior_01.png" alt="Mel escrevendo uma carta" className="aspect-[3/4] w-full object-cover" />
             </div>
             <div className="flex-1 space-y-8">
               <p className="font-handwritten text-3xl/relaxed text-foreground md:text-4xl/relaxed max-w-xl">
