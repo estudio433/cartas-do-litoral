@@ -109,7 +109,7 @@ export default function Cartas() {
         <div className="max-w-5xl mx-auto">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn} className="grid md:grid-cols-2 gap-16 items-center">
             <div>
-              <img src={cartasImage} alt="Envelope com a carta da Mel" className="w-full aspect-[4/5] object-cover rounded-[10px] shadow-md" style={{ filter: "saturate(0.93)" }} />
+              <img src="/images/Mel_Pousada_Morning_Envelope_01.png" alt="Envelope com a carta da Mel" className="w-full aspect-[4/5] object-cover rounded-[10px] shadow-md" style={{ filter: "saturate(0.93)" }} />
             </div>
             <div className="space-y-8">
               <h2 className="font-serif text-4xl">O que chega até você</h2>
