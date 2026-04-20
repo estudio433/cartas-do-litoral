@@ -9,7 +9,7 @@ import { ArrowRight, Mail, CalendarDays, MailOpen, Layers } from "lucide-react";
 
 const heroImage = "/images/Cartas_do_Litoral_Logo_(6)_1775817332554.png";
 const melImage = "/images/Mel_Pousada_Sunset_Interior_01.jpg";
-const cartasImage = "/images/Cartas_-_What_arrives_1775458325566.png";
+const cartasImage = "/images/Mel_Pousada_Morning_Envelope_01.png";
 const landingCompositeImage = "/images/Cartas_do_litoral_landing_page_(14)_1775687418525.png";
 const ilhaImg = "/images/ilha_que_aparece_do_ceu_1775461025242.png";
 const garopabaImg = "/images/garopaba_1775461038148.png";

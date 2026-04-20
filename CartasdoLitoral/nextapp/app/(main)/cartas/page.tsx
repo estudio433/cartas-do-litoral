@@ -6,7 +6,7 @@ import { PenLine, Mail, BookOpen } from "lucide-react";
 import Link from "next/link";
 import WaitlistModal from "@/components/WaitlistModal";
 
-const cartasImage = "/images/Cartas_-_What_arrives_1775458325566.png";
+const cartasImage = "/images/Mel_Pousada_Morning_Envelope_01.png";
 const heroCartasImage = "/images/Cartas_do_litoral_landing_page_(20)_1775766669174.png";
 const melCartasVideo = "/images/Mel-Cartas.mp4";
 
