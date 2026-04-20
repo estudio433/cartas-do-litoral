@@ -84,7 +84,7 @@ export default function LandingPage() {
             loop
             playsInline
             className="w-full h-full object-cover"
-            src="/images/mel-hero-video.mp4"
+            src="/images/Mel_Beach_Winter_Hero_01.mp4"
           />
         </div>
         <div className="lg:w-1/2 w-full bg-background relative flex items-center justify-center p-8 lg:p-20 overflow-hidden">
@@ -195,7 +195,7 @@ export default function LandingPage() {
           loop
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
-          src="/images/Cartas_do_litoral_video.mp4"
+          src="/images/Mel_Beach_Winter_EntaoElaFoi_01.mp4"
         />
         <div className="absolute inset-0 bg-[#1f3a44]/30" />
         <div className="absolute inset-0 flex flex-col items-center justify-end pb-16 text-center px-6">
