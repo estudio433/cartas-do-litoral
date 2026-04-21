@@ -6,9 +6,9 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
 const postImages: Record<string, string> = {
-  "a-ilha-que-aparece-do-ceu": "/images/ilha_que_aparece_do_ceu_1775461025242.png",
-  "o-silencio-de-garopaba-em-agosto": "/images/garopaba_1775461038148.png",
-  "cartas-que-nunca-foram-enviadas": "/images/Cartas_do_Litoral_Logo_(4)_1775687823362.png",
+  "a-ilha-que-aparece-do-ceu": "/images/Mel_Floripa_Aerial_Blog_01.png",
+  "o-silencio-de-garopaba-em-agosto": "/images/Mel_Rocks_Winter_Garopaba_01.png",
+  "cartas-que-nunca-foram-enviadas": "/images/Mel_Cafe_CostaLagoa_Winter_Blog_01.png",
 };
 
 export default function DiarioIndex() {
