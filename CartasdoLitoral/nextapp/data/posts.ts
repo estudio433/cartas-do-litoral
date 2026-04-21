@@ -30,15 +30,22 @@ export const posts = [
   {
     slug: "cartas-que-nunca-foram-enviadas",
     title: "Cartas que nunca foram enviadas",
-    location: "Reflexivo",
-    month: "Março",
+    location: "Florianópolis",
+    month: "Julho",
     category: "Memória",
-    excerpt: "No fundo da mochila, dobradas em quatro, algumas cartas que escrevi e não mandei.\nNão por falta de coragem — mas porque algumas coisas se dizem melhor quando guardadas.",
+    excerpt: "Tem uma carta para a minha mãe que escrevi numa terça-feira de outubro. Nunca enviei.\nNão porque não tive coragem — mas porque quando acabei de escrever já não precisava mais que ela chegasse.",
     body: [
-      "No fundo da mochila, dobradas em quatro, algumas cartas que escrevi e não mandei. Não por falta de coragem — mas porque algumas coisas se dizem melhor quando guardadas. São fragmentos de pensamentos, conversas interrompidas pelo tempo, pedaços de mim que precisavam ser postos no papel, mesmo sem um destinatário certo.",
-      "Viajar com pouca bagagem nos obriga a escolher o que realmente importa. O peso físico das coisas é fácil de medir, mas o peso emocional das memórias é o que nos ancora ou nos liberta. Essas cartas são a minha âncora invisível.",
-      "Sentada em um café simples no centro histórico de Paraty, decidi reler algumas delas. É curioso como as palavras envelhecem. O que antes era dor, hoje é apenas uma cicatriz suave; o que era dúvida urgente, tornou-se apenas mais uma história pra contar.",
-      "Decidi compartilhar um pedaço dessas lembranças com você. Não as cartas inteiras, pois essas ainda me pertencem, mas o sentimento que as originou: a certeza de que escrever é, acima de tudo, um ato de escutar a si mesmo."
+      "Tem uma carta para a minha mãe que escrevi numa terça-feira de outubro. Nunca enviei. Não porque não tive coragem — tive, inclusive mais do que devia — mas porque quando acabei de escrever já não precisava mais que ela chegasse. O papel recebeu o que precisava receber. Ela não precisava saber.",
+      "A mochila azul tem um bolso lateral com o zíper rasgado que nunca costurei. Lá dentro ficam essas cartas. Um embrulho de folhas dobradas que viajou de Curitiba até aqui sem que eu entendesse direito por quê. Trazê-las era a coisa certa. Não sei explicar como sei isso.",
+      "Cheguei à Costa da Lagoa de barco. É assim que se chega — não tem outro jeito — e o trajeto pela lagoa naquele vento sul de julho tinha uma qualidade que não consigo nomear. As casas aparecem devagar, coladas entre o morro e a água, e a luz que chegava era daquele branco cinza de inverno que torna tudo levemente irreal. Sentei na proa com a mochila no colo e fiquei olhando para as duas margens como se estivesse tentando lembrar de algo que nunca soube. Quando o barco atracou, fiz o movimento de ficar. Não fiquei. Mas o movimento aconteceu.",
+      "No Campeche o frio entra diferente. Não é o frio da cidade, que tem pressa e fica entre os prédios. É um frio horizontal, que vem do oceano sem pedir licença e atravessa o casaco antes de você perceber que estava esperando. Sentei num muro de pedra com um café de garrafa térmica que comprei num bar que não tinha placa. O homem que serviu não perguntou nada. Esse tipo de silêncio também é uma forma de hospitalidade.",
+      "Tirei uma carta do bolso rasgado. Não para ler — já sei o que está escrito. Só para ter nas mãos.",
+      "Existe uma coisa que aprendi sobre escrever sem intenção de enviar: o texto não está tentando convencer ninguém de nada. Não está tentando ser claro para que o outro entenda. Está tentando ser claro para que você entenda. É uma escuta. A mão move e alguma coisa dentro ouve.",
+      "Essa aqui é para uma amiga que se afastou devagar, tão devagar que quando percebi já era tarde demais para saber de quem foi a culpa — se é que foi de alguém. Escrevi o que não disse. Escrevi também o que nunca ia ter como dizer mesmo que dissesse, porque algumas coisas não têm palavras no tamanho certo. A carta ficou com essa textura de coisa incompleta de propósito.",
+      "Tem outra que é de raiva. Não vou descrever para quem.",
+      "O vento do Campeche virou. Ficou mais frio ainda, daquele jeito que você não acha ruim — só real. Guardei a carta. Fechei o bolso tanto quanto o zíper deixa, que é até a metade.",
+      "Carrego essas páginas não porque as palavras precisam chegar a alguém. Carrego porque escrevi, e escrever foi o ato. O destinatário era eu o tempo todo — só que eu de antes, a que não sabia ainda. Agora sabe. As cartas ficam.",
+      "Levantei do muro, coloquei a mochila nos ombros, e o mar estava exatamente onde deveria estar."
     ]
   }
 ];
