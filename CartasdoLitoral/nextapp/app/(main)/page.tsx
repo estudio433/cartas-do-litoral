@@ -81,7 +81,7 @@ export default function LandingPage() {
             loop
             playsInline
             className="w-full h-full object-cover"
-            src="/images/Mel_Beach_Winter_Hero_01.mp4"
+            src="/images/Mel_Beach_Hero_01.mp4"
           />
         </div>
         <div className="lg:w-1/2 w-full bg-background relative flex items-center justify-center p-8 lg:p-20 overflow-hidden">
