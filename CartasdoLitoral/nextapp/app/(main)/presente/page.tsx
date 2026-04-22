@@ -4,7 +4,7 @@ import { motion, type Variants } from "framer-motion";
 import { useState } from "react";
 import Link from "next/link";
 
-const presenteImg = "/images/Cartas_-_What_arrives_(17)_1775971951885.png";
+const presenteImg = "/images/Cartas_Presente.png";
 
 const fadeIn: Variants = {
   hidden: { opacity: 0, y: 20 },
