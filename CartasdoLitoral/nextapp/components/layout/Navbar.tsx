@@ -12,16 +12,17 @@ export default function Navbar() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#1f3a44]">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         <Link href="/" className="flex items-center">
-          <div className="border-[1.5px] border-dashed p-1 inline-block hover:opacity-80 transition-opacity" style={{ borderColor: "#a67c52", backgroundColor: "#eae3d8" }}>
-            <div className="border p-2 flex flex-col items-center gap-1" style={{ borderColor: "#a67c52" }}>
-              <svg width="24" height="18" viewBox="0 0 32 24" fill="none" style={{ color: "#a67c52" }}>
+          <div className="border-[1.5px] border-dashed p-1 inline-flex flex-col hover:opacity-80 transition-opacity" style={{ borderColor: "#a67c52", backgroundColor: "#eae3d8", width: "32px", height: "50px" }}>
+            <div className="border p-1 flex flex-col items-center justify-center h-full" style={{ borderColor: "#a67c52" }}>
+              <svg width="20" height="16" viewBox="0 0 32 24" fill="none" style={{ color: "#a67c52" }}>
                 <path d="M2 12C8 12 10 4 16 4C22 4 24 12 30 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
                 <path d="M2 18C8 18 10 10 16 10C22 10 24 18 30 18" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
               </svg>
-              <div className="font-sans tracking-[0.15em] font-bold" style={{ fontSize: "6px", color: "#a67c52" }}>CARTAS DO LITORAL</div>
-              <div className="relative font-serif font-bold w-full text-center pt-0.5" style={{ fontSize: "7px", color: "#a67c52", borderTopColor: "#a67c52", borderTopWidth: "1px" }}>
-                SANTA CATARINA
-                <span className="absolute bottom-0 left-0.5" style={{ fontSize: "4px", opacity: "0.5" }}>001</span>
+              <div className="font-sans tracking-[0.08em] font-bold text-center leading-tight" style={{ fontSize: "4px", color: "#a67c52" }}>CARTAS</div>
+              <div className="font-sans tracking-[0.08em] font-bold text-center leading-tight" style={{ fontSize: "4px", color: "#a67c52" }}>DO</div>
+              <div className="font-sans tracking-[0.08em] font-bold text-center leading-tight" style={{ fontSize: "4px", color: "#a67c52" }}>LITORAL</div>
+              <div className="relative font-serif font-bold w-full text-center" style={{ fontSize: "5px", color: "#a67c52", borderTopColor: "#a67c52", borderTopWidth: "1px", paddingTop: "2px", marginTop: "2px" }}>
+                SC
               </div>
             </div>
           </div>
