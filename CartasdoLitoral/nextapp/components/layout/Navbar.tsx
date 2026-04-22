@@ -10,18 +10,18 @@ export default function Navbar() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#1f3a44]">
-      <div className="max-w-7xl mx-auto px-6 h-32 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         <Link href="/" className="flex items-center">
-          <div className="border-[1.5px] border-dashed p-1 inline-flex flex-col hover:opacity-80 transition-opacity" style={{ borderColor: "#a67c52", backgroundColor: "#eae3d8", width: "68px", height: "110px" }}>
+          <div className="border-[1.5px] border-dashed p-1 inline-flex flex-col hover:opacity-80 transition-opacity" style={{ borderColor: "#a67c52", backgroundColor: "#eae3d8", width: "52px", height: "85px" }}>
             <div className="border p-1.5 flex flex-col items-center justify-center h-full" style={{ borderColor: "#a67c52" }}>
-              <svg width="36" height="28" viewBox="0 0 32 24" fill="none" style={{ color: "#a67c52" }}>
+              <svg width="28" height="22" viewBox="0 0 32 24" fill="none" style={{ color: "#a67c52" }}>
                 <path d="M2 12C8 12 10 4 16 4C22 4 24 12 30 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
                 <path d="M2 18C8 18 10 10 16 10C22 10 24 18 30 18" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
               </svg>
-              <div className="font-sans tracking-[0.08em] font-bold text-center leading-tight" style={{ fontSize: "6px", color: "#a67c52" }}>CARTAS</div>
-              <div className="font-sans tracking-[0.08em] font-bold text-center leading-tight" style={{ fontSize: "6px", color: "#a67c52" }}>DO</div>
-              <div className="font-sans tracking-[0.08em] font-bold text-center leading-tight" style={{ fontSize: "6px", color: "#a67c52" }}>LITORAL</div>
-              <div className="relative font-serif font-bold w-full text-center" style={{ fontSize: "7px", color: "#a67c52", borderTopColor: "#a67c52", borderTopWidth: "1px", paddingTop: "2px", marginTop: "3px" }}>
+              <div className="font-sans tracking-[0.08em] font-bold text-center leading-tight" style={{ fontSize: "5px", color: "#a67c52" }}>CARTAS</div>
+              <div className="font-sans tracking-[0.08em] font-bold text-center leading-tight" style={{ fontSize: "5px", color: "#a67c52" }}>DO</div>
+              <div className="font-sans tracking-[0.08em] font-bold text-center leading-tight" style={{ fontSize: "5px", color: "#a67c52" }}>LITORAL</div>
+              <div className="relative font-serif font-bold w-full text-center" style={{ fontSize: "6px", color: "#a67c52", borderTopColor: "#a67c52", borderTopWidth: "1px", paddingTop: "2px", marginTop: "3px" }}>
                 SC
               </div>
             </div>
