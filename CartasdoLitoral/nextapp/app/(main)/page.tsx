@@ -290,9 +290,9 @@ export default function LandingPage() {
               <div className="space-y-8">
                 <h2 className="font-serif text-4xl">O que chega até você</h2>
                 <div className="space-y-6 text-muted-foreground leading-relaxed">
-                  <p>Uma carta escrita por Mel, contando sua jornada por um novo lugar do litoral.</p>
-                  <p>Um detalhe do lugar — algo para guardar, tocar ou lembrar.</p>
-                  <p>A história continua além do papel, com conteúdos que se desdobram com o tempo.</p>
+                  <p>Uma carta impressa, escrita por Mel, com o próximo capítulo da história.</p>
+                  <p>Um pequeno detalhe do lugar daquele mês — para guardar, tocar ou lembrar.</p>
+                  <p>Não é uma carta solta. É uma história que continua.</p>
                 </div>
               </div>
             </motion.div>
@@ -304,8 +304,8 @@ export default function LandingPage() {
         <div className="py-32 px-6">
           <div className="max-w-4xl mx-auto text-center">
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn}>
-              <h2 className="font-serif text-4xl mb-4">Receba a história completa em casa</h2>
-              <p className="text-muted-foreground mb-16">Cada carta traz um novo lugar do litoral, escrito com calma para ser lido com tempo.</p>
+              <h2 className="font-serif text-4xl mb-4">Como você quer receber</h2>
+              <p className="text-muted-foreground mb-16">Tudo pensado para ser aberto sem pressa.</p>
               <div className="flex flex-wrap justify-center gap-x-16 gap-y-10 mb-16">
                 {[
                   { icon: CalendarDays, label: "1 carta por mês" },
