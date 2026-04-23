@@ -24,14 +24,14 @@ const faqs = [
     perguntas: [
       { q: "Posso cancelar quando quiser?", a: "Sim. Você pode cancelar a qualquer momento. Para não receber a carta daquele mês, cancele até o dia 8. Cancelamentos após o dia 8 ainda recebem a carta daquele mês." },
       { q: "O que chega dentro do envelope?", a: "Cada envelope contém duas folhas de papel A4 premium impressas frente e verso — quatro páginas de história — com design exclusivo Cartas do Litoral. Mais um pequeno detalhe físico inspirado no lugar daquele mês." },
-      { q: "Qual é a diferença entre o plano mensal e o anual?", a: "O plano mensal é cobrado todo mês e pode ser cancelado a qualquer momento. O plano anual oferece melhor valor — você paga por 12 meses e recebe as 12 cartas da Season 1 completa." },
+      { q: "Qual é a diferença entre o plano mensal e o anual?", a: "O plano mensal é cobrado todo mês e pode ser cancelado a qualquer momento. O plano anual oferece melhor valor — 12 cartas, a história completa da Season 1, de julho de 2026 a junho de 2027." },
       { q: "Posso pausar a minha assinatura?", a: "Por enquanto não oferecemos pausa — apenas cancelamento. Entre em contato em oi@cartasdolitoral.com.br se precisar de ajuda." }
     ]
   },
   {
     categoria: "Presente",
     perguntas: [
-      { q: "Como funciona a assinatura de presente?", a: "A assinatura de presente é oferecida no plano anual — 12 cartas, uma por mês. Você indica o endereço da pessoa presenteada e pode incluir uma mensagem pessoal no primeiro envelope. A contagem dos 12 meses começa no primeiro despacho após a confirmação do pagamento." },
+      { q: "Como funciona a assinatura de presente?", a: "A assinatura de presente é oferecida no plano anual — 12 cartas, uma por mês. Você indica o endereço de quem vai receber e pode incluir uma mensagem pessoal no primeiro envelope. Os presentes seguem o mesmo calendário da Season 1, começando em julho de 2026." },
       { q: "A pessoa presenteada vai saber quem deu o presente?", a: "Sim — se você quiser. No primeiro envelope há um cartão especial onde pode incluir uma mensagem pessoal." },
       { q: "Posso dar de presente para alguém fora do Brasil?", a: "Por enquanto despachamos apenas para endereços no Brasil." }
     ]
