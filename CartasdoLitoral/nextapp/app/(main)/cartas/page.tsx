@@ -170,18 +170,18 @@ export default function Cartas() {
         <div className="max-w-4xl mx-auto">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn}>
             <h2 className="font-serif text-4xl mb-4">Planos</h2>
-            <p className="text-muted-foreground mb-20">Escolha como quer acompanhar a história.</p>
+            <p className="text-muted-foreground mb-20">Assinaturas abertas em junho. Cadastre-se agora para começar do início.</p>
             <div className="grid sm:grid-cols-2 gap-8 max-w-xl mx-auto">
               <div className="bg-background p-10 flex flex-col items-center gap-6 border border-border/40">
                 <h3 className="font-serif text-2xl">Mensal</h3>
                 <p className="text-muted-foreground text-sm text-center">Flexibilidade total. Cancele quando quiser.</p>
-                <button onClick={() => openModal("mensal")} className="w-full px-6 py-4 border border-accent-warm text-accent-warm hover:bg-accent-warm/10 transition-colors font-medium tracking-wide">Assinar mensal</button>
+                <button onClick={() => openModal("mensal")} className="w-full px-6 py-4 border border-accent-warm text-accent-warm hover:bg-accent-warm/10 transition-colors font-medium tracking-wide">Quero acompanhar desde o início</button>
               </div>
               <div className="bg-background p-10 flex flex-col items-center gap-6 border-2 border-accent-warm/40 relative">
                 <span className="absolute -top-3 left-1/2 -translate-x-1/2 text-xs uppercase tracking-widest text-white bg-accent-warm px-4 py-1">Melhor valor</span>
                 <h3 className="font-serif text-2xl">Anual</h3>
                 <p className="text-muted-foreground text-sm text-center">12 cartas. Uma jornada completa.</p>
-                <button onClick={() => openModal("anual")} className="w-full px-6 py-4 bg-accent-warm text-white hover:bg-accent-warm/90 transition-colors font-medium tracking-wide shadow-lg shadow-accent-warm/20">Assinar anual</button>
+                <button onClick={() => openModal("anual")} className="w-full px-6 py-4 bg-accent-warm text-white hover:bg-accent-warm/90 transition-colors font-medium tracking-wide shadow-lg shadow-accent-warm/20">Quero acompanhar desde o início</button>
               </div>
             </div>
           </motion.div>
