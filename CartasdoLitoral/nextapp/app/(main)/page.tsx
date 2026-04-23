@@ -29,6 +29,26 @@ const lugares = [
   { tipo: "Ficar", local: "em uma pousada pequena no sul da ilha", texto: "Alguns lugares não pedem nada além de presença." }
 ];
 
+function FAQItem({ question, answer }: { question: string; answer: string }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className="border-b border-foreground/10">
+      <button
+        onClick={() => setOpen(!open)}
+        className="w-full text-left py-6 flex justify-between items-center gap-4 text-foreground font-serif text-lg hover:text-accent-warm transition-colors"
+      >
+        {question}
+        <span className="text-accent-warm shrink-0 text-xl leading-none">{open ? "−" : "+"}</span>
+      </button>
+      {open && (
+        <p className="pb-6 text-muted-foreground leading-relaxed text-sm">
+          {answer}
+        </p>
+      )}
+    </div>
+  );
+}
+
 export default function LandingPage() {
   const [modalOpen, setModalOpen] = useState(false);
   const [modalPlan, setModalPlan] = useState<"mensal" | "anual" | null>(null);
@@ -471,6 +491,48 @@ export default function LandingPage() {
             </button>
           )}
         </motion.div>
+      </section>
+
+      <section className="py-24 px-6 bg-secondary">
+        <div className="max-w-2xl mx-auto">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={fadeIn}
+            className="space-y-0"
+          >
+            <h2 className="font-serif text-3xl text-foreground mb-12 text-center">Perguntas frequentes</h2>
+            {[
+              {
+                q: "O que é Cartas do Litoral?",
+                a: "Uma correspondência física mensal. Cada mês você recebe uma carta impressa de Mel, escrita de um lugar diferente da costa de Santa Catarina — junto com um pequeno detalhe do lugar."
+              },
+              {
+                q: "Se eu me cadastrar agora, começo do zero ou pego no meio da história?",
+                a: "Todos os assinantes começam do início. A primeira carta é de Florianópolis, julho de 2026."
+              },
+              {
+                q: "Quando as assinaturas abrem para pagamento?",
+                a: "Em junho de 2026. Quem está na lista recebe aviso antes de todo mundo."
+              },
+              {
+                q: "Posso dar de presente?",
+                a: "Sim. Há uma opção específica para presente — a carta chega direto para a pessoa presenteada."
+              },
+              {
+                q: "O que chega junto com a carta?",
+                a: "A carta impressa mais um pequeno detalhe físico inspirado no lugar do mês — algo para guardar."
+              },
+              {
+                q: "Posso cancelar quando quiser?",
+                a: "Sim. A assinatura mensal pode ser cancelada a qualquer momento."
+              }
+            ].map((item, i) => (
+              <FAQItem key={i} question={item.q} answer={item.a} />
+            ))}
+          </motion.div>
+        </div>
       </section>
 
       <WaitlistModal isOpen={modalOpen} plan={modalPlan} onClose={() => setModalOpen(false)} />
