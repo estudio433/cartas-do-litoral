@@ -6,9 +6,9 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
 const postImages: Record<string, string> = {
-  "a-ilha-que-aparece-do-ceu": "/images/Mel_Floripa_Aerial_Blog_01.png",
-  "o-silencio-de-garopaba-em-agosto": "/images/Mel_Rocks_Winter_Garopaba_01.png",
-  "cartas-que-nunca-foram-enviadas": "/images/Mel_Cafe_CostaLagoa_Winter_Blog_01.png",
+  "florianopolis-no-inverno": "/images/Mel_Floripa_Aerial_Blog_01.png",
+  "vale-a-pena-florianopolis-julho": "/images/Mel_Rocks_Winter_Garopaba_01.png",
+  "renda-de-bilro-florianopolis": "/images/Mel_Cafe_CostaLagoa_Winter_Blog_01.png",
 };
 
 export default function DiarioIndex() {
