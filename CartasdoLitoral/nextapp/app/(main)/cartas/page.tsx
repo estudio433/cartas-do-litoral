@@ -16,9 +16,9 @@ const fadeIn: Variants = {
 };
 
 const steps = [
-  { num: "01", icon: PenLine, label: "Você se inscreve", desc: "Escolha o plano mensal ou anual e entre na lista de assinantes." },
-  { num: "02", icon: Mail, label: "Recebe uma carta por mês", desc: "Uma carta escrita à mão por Mel, vinda de um novo lugar do litoral." },
-  { num: "03", icon: BookOpen, label: "Acompanha a jornada da Mel", desc: "A história continua além do papel, com conteúdos que se desdobram com o tempo." }
+  { num: "01", icon: PenLine, label: "Você se cadastra", desc: "Escolha o plano mensal ou anual e entre na lista. As assinaturas abrem em junho de 2026." },
+  { num: "02", icon: Mail, label: "Recebe uma carta por mês", desc: "Duas folhas de papel A4 premium, impressas frente e verso com design exclusivo Cartas do Litoral. Mel escreve de um lugar diferente do litoral a cada mês." },
+  { num: "03", icon: BookOpen, label: "Acompanha a história", desc: "Cada carta é um capítulo. A história continua de mês em mês, de lugar em lugar, ao longo do litoral de Santa Catarina." }
 ];
 
 const faqs = [
