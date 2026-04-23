@@ -333,8 +333,36 @@ export default function LandingPage() {
                   <span className="text-xs uppercase tracking-widest text-accent-warm/70 font-semibold">Melhor valor</span>
                 </div>
               </div>
+              <p className="mt-8 text-sm text-muted-foreground/60 text-center">
+                Assinaturas abertas em junho. Entre na lista agora para começar do início.
+              </p>
             </motion.div>
           </div>
+        </div>
+      </section>
+
+      <section className="py-24 px-6 bg-background text-center">
+        <div className="max-w-xl mx-auto">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={fadeIn}
+            className="space-y-6"
+          >
+            <h2 className="font-serif text-3xl text-foreground">
+              Também pode ser presente
+            </h2>
+            <p className="text-muted-foreground leading-relaxed">
+              Para quem gosta de cartas, leitura, litoral — ou da sensação rara de receber algo bonito pelo correio.
+            </p>
+            <Link
+              href="/presente"
+              className="inline-block px-8 py-4 border border-accent-warm text-accent-warm hover:bg-accent-warm hover:text-white transition-all duration-500 font-medium tracking-wide"
+            >
+              Presentear alguém
+            </Link>
+          </motion.div>
         </div>
       </section>
 
