@@ -62,14 +62,14 @@ export default function Presente() {
             <div className="flex-1 space-y-6">
               <p className="text-xs uppercase tracking-widest text-accent-warm/70 font-semibold">Um presente diferente</p>
               <h1 className="font-serif text-5xl text-foreground leading-tight">
-                A presente começa com uma carta.<br/>
+                O presente começa com uma carta.<br/>
                 Termina com uma história guardada.
               </h1>
               <p className="text-muted-foreground text-lg leading-relaxed">
-                Todo mês um envelope chega na caixa de correio de quem você escolheu. Dentro — uma carta de Mel, um postcard ilustrado, um item colecionável, e algo que só existe naquele lugar do litoral brasileiro.
+                Todo mês um envelope chega na caixa de correio de quem você escolheu. Dentro — uma carta de Mel, escrita de um lugar diferente da costa de Santa Catarina.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Não é um presente que se usa e acaba. É uma história que chega em casa todo mês durante um ano inteiro.
+                Não é um presente que se usa e acaba. É uma história que continua — capítulo por capítulo, pelo correio.
               </p>
               <div className="border border-accent-warm/20 p-5 bg-secondary space-y-1">
                 <p className="text-sm font-medium text-foreground">Season 1 — Litoral Catarinense</p>
