@@ -63,12 +63,23 @@ export default function DiarioPost() {
               <path d="M28 5.5H36" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </div>
+          {post.faqs && post.faqs.length > 0 && (
+            <div className="mt-20 space-y-0 border-t border-foreground/10 pt-16">
+              <h2 className="font-serif text-2xl text-foreground mb-10">Perguntas frequentes</h2>
+              {post.faqs.map((item, i) => (
+                <div key={i} className="border-b border-foreground/10 py-6 last:border-0">
+                  <p className="font-serif text-lg text-foreground mb-3">{item.q}</p>
+                  <p className="text-muted-foreground leading-relaxed text-sm">{item.a}</p>
+                </div>
+              ))}
+            </div>
+          )}
           <div className="mt-20 p-8 bg-secondary rounded-sm text-center">
             <p className="font-handwritten text-2xl text-foreground mb-4">Gostou de receber esta carta?</p>
             <p className="text-sm text-muted-foreground mb-6">Junte-se à correspondência e receba uma nova história na sua caixa de correio todo mês.</p>
             <Link href="/">
               <button className="px-6 py-3 border border-accent-warm text-accent-warm hover:bg-accent-warm hover:text-white transition-all font-medium text-sm">
-                Assinar Cartas do Litoral
+                Quero acompanhar desde o início
               </button>
             </Link>
           </div>
