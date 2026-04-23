@@ -24,7 +24,7 @@ const steps = [
 const faqs = [
   {
     q: "Quando recebo a primeira carta?",
-    a: "Se a sua assinatura for confirmada até o dia 9 do mês, a carta parte neste mês. Se for após o dia 9, parte no mês seguinte. Despachamos entre os dias 10 e 15 de cada mês."
+    a: "A primeira carta é de Florianópolis, julho de 2026. Todos os assinantes começam do início da história."
   },
   {
     q: "Posso cancelar quando quiser?",
@@ -32,15 +32,15 @@ const faqs = [
   },
   {
     q: "Para onde as cartas são enviadas?",
-    a: "Para qualquer endereço no Brasil via Correios. A primeira carta é enviada com rastreamento."
+    a: "Para qualquer endereço no Brasil via Correios."
   },
   {
     q: "O que chega dentro do envelope?",
-    a: "A carta de Mel (3 páginas em papel premium), um postcard ilustrado, um item colecionável, uma playlist via QR code, e algo especial daquele lugar do litoral."
+    a: "Duas folhas de papel A4 premium impressas frente e verso — quatro páginas de história — com design exclusivo Cartas do Litoral. Mais um pequeno detalhe físico do lugar daquele mês."
   },
   {
     q: "Tenho mais dúvidas.",
-    a: "Visite a nossa página de perguntas frequentes ou escreva para ola@cartasdolitoral.com.br."
+    a: "Visite a nossa página de perguntas frequentes ou escreva para oi@cartasdolitoral.com.br."
   }
 ];
 
