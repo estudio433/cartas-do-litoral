@@ -13,9 +13,9 @@ const cartasImage = "/images/Mel_Pousada_Morning_Envelope_Watercolor_01.png";
 const landingCompositeImage = "/images/Cartas_do_litoral_landing_page_(14)_1775687418525.png";
 
 const postImages: Record<string, string> = {
-  "a-ilha-que-aparece-do-ceu": "/images/Mel_Floripa_Aerial_Blog_01.png",
-  "o-silencio-de-garopaba-em-agosto": "/images/Mel_Rocks_Winter_Garopaba_01.png",
-  "cartas-que-nunca-foram-enviadas": "/images/Mel_Cafe_CostaLagoa_Winter_Blog_01.png",
+  "florianopolis-no-inverno": "/images/Mel_Floripa_Aerial_Blog_01.png",
+  "vale-a-pena-florianopolis-julho": "/images/Mel_Rocks_Winter_Garopaba_01.png",
+  "renda-de-bilro-florianopolis": "/images/Mel_Cafe_CostaLagoa_Winter_Blog_01.png",
 };
 
 const fadeIn: Variants = {
