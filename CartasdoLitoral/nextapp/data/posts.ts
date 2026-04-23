@@ -1,51 +1,68 @@
 export const posts = [
   {
-    slug: "a-ilha-que-aparece-do-ceu",
-    title: "A ilha que aparece do céu",
+    slug: "florianopolis-no-inverno",
+    title: "Florianópolis no inverno: como é visitar a ilha fora da temporada",
     location: "Florianópolis",
     month: "Julho",
-    category: "Ilhas",
-    excerpt: "Vista de cima, Florianópolis parece um sonho suspenso entre o mar e a serra.\nCheguei numa manhã nublada e entendi por que dizem que a ilha aparece.",
+    category: "Litoral",
+    excerpt: "Visitar Florianópolis no inverno pode ser uma das melhores formas de conhecer a ilha — especialmente para quem prefere menos movimento e uma cidade mais próxima do ritmo real de quem vive ali.",
     body: [
-      "Vista de cima, Florianópolis parece um sonho suspenso entre o mar e a Serra. Cheguei numa manhã nublada e entendi por que dizem que a ilha aparece. As nuvens baixas escondiam o contorno das praias, deixando apenas o verde escuro dos morros visível como se flutuassem na água.",
-      "A Ilha da Magia, como os locais a chamam, não entrega seus segredos logo de cara. É preciso caminhar pelas trilhas de terra batida, sentir o cheiro de maresia misturado com a mata atlântica, e escutar as histórias dos pescadores antigos que ainda consertam suas redes na areia fina da praia da Armação.",
-      "Passei os primeiros dias apenas observando o ritmo das marés. Há algo profundamente reconfortante em um lugar onde o tempo é ditado pela natureza, não pelos relógios. Quando a luz do entardecer bate nas dunas da Joaquina, a areia ganha um tom dourado que parece aquecer a alma.",
-      "Escrevo esta carta com o barulho das ondas quebrando ao fundo, lembrando que às vezes é preciso atravessar a neblina para encontrar a magia que sempre esteve lá, esperando para ser vista."
+      "Sim — visitar Florianópolis no inverno pode ser uma das melhores formas de conhecer a ilha, especialmente para quem prefere menos movimento, temperaturas mais amenas e uma cidade mais próxima da rotina real de quem vive ali.",
+      "No verão, Florianópolis costuma ser associada a trânsito, praias cheias e agenda acelerada. No inverno, ela respira de outro jeito. As filas diminuem. O som do mar aparece mais. Os bairros retomam um ritmo mais calmo.",
+      "Entre junho e agosto, as temperaturas variam bastante. Há manhãs frias, tardes agradáveis e dias de vento marcante — especialmente quando o sul resolve aparecer. É uma época em que a ilha troca a euforia pela presença. Você nota o cheiro do café saindo cedo no centro, o barulho das cadeiras sendo arrastadas em restaurantes menores, o silêncio das praias em dias nublados.",
+      "O inverno pede outro tipo de roteiro: caminhar no centro histórico sem pressa, almoçar no Mercado Público de Florianópolis, visitar Ribeirão da Ilha em um dia claro, explorar cafés, ver o mar sem obrigação de entrar nele, jantar cedo e voltar devagar.",
+      "Para muita gente, essa é a melhor época por motivos simples: preços geralmente melhores, menos filas, deslocamentos mais tranquilos, restaurantes com ritmo mais humano, sensação de cidade vivida — não performada.",
+      "O inverno combina com quem prefere observar a marcar checklist, gosta de cidades menos lotadas, valoriza comida, caminhada e atmosfera, e não precisa de calor para gostar do mar.",
+      "Algumas histórias começam no frio."
+    ],
+    faqs: [
+      { q: "Faz frio em Florianópolis no inverno?", a: "Pode fazer, especialmente de manhã e à noite. Julho costuma estar entre os meses mais frios." },
+      { q: "Dá para aproveitar as praias?", a: "Sim. Mesmo sem banho, caminhar na areia e ver praias vazias pode ser uma experiência ótima." },
+      { q: "Julho é uma boa época?", a: "Sim — especialmente para quem busca tranquilidade." }
     ]
   },
   {
-    slug: "o-silencio-de-garopaba-em-agosto",
-    title: "O silêncio de Garopaba em agosto",
-    location: "Garopaba",
-    month: "Agosto",
-    category: "Tempo & Silêncio",
-    excerpt: "Agosto em Garopaba é para quem sabe esperar.\nAs ruas vazias têm uma qualidade diferente — não de abandono, mas de descanso.\nA cidade respira.",
+    slug: "vale-a-pena-florianopolis-julho",
+    title: "Vale a pena ir para Florianópolis em julho?",
+    location: "Florianópolis",
+    month: "Julho",
+    category: "Litoral",
+    excerpt: "Se a sua expectativa é praia lotada e calor constante, talvez janeiro combine mais. Se você quer conhecer a cidade com mais espaço e menos pressa, julho pode surpreender.",
     body: [
-      "Agosto em Garopaba é para quem sabe esperar. As ruas vazias têm uma qualidade diferente — não de abandono, mas de descanso. A cidade respira após a intensidade do verão, recolhendo-se em si mesma, como alguém que finalmente encontra um momento de paz no fim do dia.",
-      "O vento sul traz um frio cortante, mas também limpa o céu, deixando o azul mais intenso que já vi. As praias, agora extensas faixas de areia intocada, são um convite à introspecção. Caminhar pela orla do Siriú sem cruzar com outra pessoa é uma experiência que nos devolve o nosso próprio tamanho diante do oceano.",
-      "As baleias-francas costumam visitar estas águas nesta época do ano. Fiquei horas sentada nas pedras, esperando por um esguicho d'água no horizonte. Há uma lição silenciosa na paciência de quem espera por um gigante do mar.",
-      "Esta carta vai com um pouco da brisa gelada e muito do calor do café que me acompanha nas manhãs de agosto. Que o silêncio também encontre espaço nos seus dias."
+      "Sim — vale a pena ir para Florianópolis em julho, principalmente se você prefere uma viagem mais tranquila, temperaturas amenas e menos movimento do que no verão.",
+      "Se a sua expectativa é praia lotada e calor constante, talvez janeiro combine mais. Se você quer conhecer a cidade com mais espaço e menos pressa, julho pode surpreender.",
+      "Julho costuma trazer dias frios alternados com tardes agradáveis. O clima muda rápido. Pode haver vento e chuva em alguns períodos. A vantagem é que a ilha fica mais silenciosa. Você percebe bairros, mercados, cafés e paisagens sem a camada de correria típica da alta temporada.",
+      "O que compensa nessa época: hospedagens frequentemente melhores, menos trânsito, restaurantes mais acessíveis, passeios urbanos mais agradáveis, praias vazias e bonitas para caminhar.",
+      "O que considerar antes de ir: água fria para banho, noites frias, chance de frente fria e chuva, alguns negócios sazonais com horários reduzidos.",
+      "Julho funciona bem para casais que gostam de calmaria, viajantes solo, leitores e pessoas contemplativas, quem gosta de gastronomia local, e quem quer ver a ilha sem multidão.",
+      "Nem toda viagem precisa de calor para marcar memória."
+    ],
+    faqs: [
+      { q: "Chove muito em julho?", a: "Varia. Julho pode ter frentes frias, então vale acompanhar a previsão." },
+      { q: "Dá para curtir mesmo sem praia?", a: "Sim. A cidade oferece bairros charmosos, boa comida e belas paisagens o ano inteiro." },
+      { q: "É mais barato?", a: "Muitas vezes, sim, especialmente fora de feriados." }
     ]
   },
   {
-    slug: "cartas-que-nunca-foram-enviadas",
-    title: "Cartas que nunca foram enviadas",
+    slug: "renda-de-bilro-florianopolis",
+    title: "O que é renda de bilro? História, tradição e onde ver em Florianópolis",
     location: "Florianópolis",
     month: "Julho",
-    category: "Memória",
-    excerpt: "Tem uma carta para a minha mãe que escrevi numa terça-feira de outubro. Nunca enviei.\nNão porque não tive coragem — mas porque quando acabei de escrever já não precisava mais que ela chegasse.",
+    category: "Cultura",
+    excerpt: "A renda de bilro é uma técnica artesanal feita com fios enrolados em pequenos pinos de madeira. Em Florianópolis, ela carrega mais de dois séculos de herança açoriana — e ainda é feita à mão em bairros tradicionais da ilha.",
     body: [
-      "Tem uma carta para a minha mãe que escrevi numa terça-feira de outubro. Nunca enviei. Não porque não tive coragem — tive, inclusive mais do que devia — mas porque quando acabei de escrever já não precisava mais que ela chegasse. O papel recebeu o que precisava receber. Ela não precisava saber.",
-      "A mochila azul tem um bolso lateral com o zíper rasgado que nunca costurei. Lá dentro ficam essas cartas. Um embrulho de folhas dobradas que viajou de Curitiba até aqui sem que eu entendesse direito por quê. Trazê-las era a coisa certa. Não sei explicar como sei isso.",
-      "Cheguei à Costa da Lagoa de barco. É assim que se chega — não tem outro jeito — e o trajeto pela lagoa naquele vento sul de julho tinha uma qualidade que não consigo nomear. As casas aparecem devagar, coladas entre o morro e a água, e a luz que chegava era daquele branco cinza de inverno que torna tudo levemente irreal. Sentei na proa com a mochila no colo e fiquei olhando para as duas margens como se estivesse tentando lembrar de algo que nunca soube. Quando o barco atracou, fiz o movimento de ficar. Não fiquei. Mas o movimento aconteceu.",
-      "No Campeche o frio entra diferente. Não é o frio da cidade, que tem pressa e fica entre os prédios. É um frio horizontal, que vem do oceano sem pedir licença e atravessa o casaco antes de você perceber que estava esperando. Sentei num muro de pedra com um café de garrafa térmica que comprei num bar que não tinha placa. O homem que serviu não perguntou nada. Esse tipo de silêncio também é uma forma de hospitalidade.",
-      "Tirei uma carta do bolso rasgado. Não para ler — já sei o que está escrito. Só para ter nas mãos.",
-      "Existe uma coisa que aprendi sobre escrever sem intenção de enviar: o texto não está tentando convencer ninguém de nada. Não está tentando ser claro para que o outro entenda. Está tentando ser claro para que você entenda. É uma escuta. A mão move e alguma coisa dentro ouve.",
-      "Essa aqui é para uma amiga que se afastou devagar, tão devagar que quando percebi já era tarde demais para saber de quem foi a culpa — se é que foi de alguém. Escrevi o que não disse. Escrevi também o que nunca ia ter como dizer mesmo que dissesse, porque algumas coisas não têm palavras no tamanho certo. A carta ficou com essa textura de coisa incompleta de propósito.",
-      "Tem outra que é de raiva. Não vou descrever para quem.",
-      "O vento do Campeche virou. Ficou mais frio ainda, daquele jeito que você não acha ruim — só real. Guardei a carta. Fechei o bolso tanto quanto o zíper deixa, que é até a metade.",
-      "Carrego essas páginas não porque as palavras precisam chegar a alguém. Carrego porque escrevi, e escrever foi o ato. O destinatário era eu o tempo todo — só que eu de antes, a que não sabia ainda. Agora sabe. As cartas ficam.",
-      "Levantei do muro, coloquei a mochila nos ombros, e o mar estava exatamente onde deveria estar."
+      "A renda de bilro é uma técnica artesanal de tecelagem feita com fios enrolados em pequenos pinos de madeira chamados bilros. Em Florianópolis, ela se tornou uma das expressões culturais mais conhecidas da herança açoriana e continua viva em bairros tradicionais da ilha.",
+      "Mais do que um objeto decorativo, a renda de bilro carrega tempo, repetição, memória e habilidade passada entre gerações.",
+      "A artesã trabalha com dezenas de fios presos a uma almofada. Cada fio fica enrolado em um bilro de madeira. Ao cruzar, girar e tensionar esses fios em sequência, surgem desenhos delicados e precisos. O som costuma chegar antes da imagem: madeira tocando madeira em ritmo constante. Toc-toc-toc. Quase como chuva organizada.",
+      "A técnica veio com imigrantes açorianos a partir do século XVIII. Em comunidades costeiras de Florianópolis, especialmente onde famílias viviam da pesca e da vida doméstica, a renda encontrou espaço para permanecer. Com o tempo, tornou-se parte da identidade local.",
+      "Alguns dos lugares mais conhecidos para encontrar essa tradição: Ribeirão da Ilha, Santo Antônio de Lisboa, feiras culturais e eventos locais, centros de artesanato tradicional. Em alguns espaços, ainda é possível ver rendeiras trabalhando ao vivo — o que muda completamente a experiência de entender a peça pronta.",
+      "Porque certas habilidades ensinam algo raro hoje: atenção contínua. Cinco centímetros podem levar horas. Um desenho exige repetição sem pressa. Nada acontece instantaneamente. Em um tempo que valoriza velocidade, a renda de bilro preserva outro tipo de inteligência.",
+      "Algumas coisas só podem ser entendidas quando vistas devagar."
+    ],
+    faqs: [
+      { q: "O que significa 'bilro'?", a: "Bilros são pequenos pinos de madeira usados para enrolar e manipular os fios." },
+      { q: "A renda de bilro é exclusiva de Florianópolis?", a: "Não. A técnica existe em outros lugares, mas em Florianópolis ela tem forte ligação histórica com a cultura açoriana." },
+      { q: "Onde é mais fácil encontrar?", a: "Ribeirão da Ilha e Santo Antônio de Lisboa costumam ser boas referências." }
     ]
   }
 ];
