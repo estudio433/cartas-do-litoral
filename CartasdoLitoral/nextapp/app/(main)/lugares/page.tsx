@@ -49,8 +49,8 @@ export default function Lugares() {
         <div className="max-w-3xl mx-auto">
           <motion.div initial="hidden" animate="visible" variants={fadeIn}>
             <h1 className="font-serif text-5xl mb-6">Lugares</h1>
-            <p className="text-muted-foreground text-lg leading-relaxed max-w-xl">Uma curadoria de lugares que ficaram. Sem estrelas, sem avaliações. Só o que vale a pena.</p>
-            <p className="text-sm text-muted-foreground/50 italic mt-4 max-w-xl">Alguns vividos, alguns contados por quem os conhece de cor.</p>
+            <p className="text-muted-foreground text-lg leading-relaxed max-w-xl">Lugares que ficaram. Sem estrelas, sem avaliações — só o que vale a pena lembrar.</p>
+            <p className="text-sm text-muted-foreground/50 italic mt-4 max-w-xl">Alguns vividos por Mel. Outros contados por quem os conhece de cor.</p>
           </motion.div>
         </div>
       </section>
