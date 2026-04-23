@@ -88,11 +88,9 @@ export default function Presente() {
             <h2 className="font-serif text-3xl text-foreground">O que chega todo mês</h2>
             <div className="space-y-8">
               {[
-                { label: "A carta de Mel", desc: "3 páginas impressas em papel premium. Mel conta onde está, o que encontrou, o que ficou. Cada carta é um capítulo da mesma jornada pelo litoral." },
-                { label: "Postcard ilustrado", desc: "Uma ilustração exclusiva do destino do mês. Colecionável. Digno de emoldurar." },
-                { label: "Item colecionável", desc: "Um ímã de vinil, adesivo, ou pin do lugar visitado. Diferente a cada mês." },
-                { label: "Playlist do lugar", desc: "Um QR code que abre uma playlist Spotify curada para aquele lugar específico. A música do litoral." },
-                { label: "Algo que só existe ali", desc: "Um elemento especial ligado à cultura local — como uma reprodução de renda de bilro de Ribeirão da Ilha." },
+                { label: "A carta de Mel", desc: "Duas folhas de papel A4 premium, impressas frente e verso — quatro páginas de história. Mel escreve de um lugar diferente do litoral a cada mês, com tempo, com detalhe, sem pressa. Cada carta tem design exclusivo Cartas do Litoral, com ilustração e carimbo postal do lugar." },
+                { label: "Um detalhe do lugar", desc: "Um pequeno elemento físico inspirado no destino do mês. Algo para guardar, tocar ou lembrar." },
+                { label: "A história continua", desc: "Cada carta é um capítulo. Quem recebe acompanha a jornada inteira — de Florianópolis em julho até o último destino em junho de 2027." },
               ].map((item, i) => (
                 <div key={i} className="flex gap-8 items-start border-b border-foreground/10 pb-8 last:border-0 last:pb-0">
                   <div className="shrink-0 w-2 h-2 rounded-full bg-accent-warm/40 mt-2" />
