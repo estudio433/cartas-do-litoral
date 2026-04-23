@@ -145,6 +145,24 @@ export default function LandingPage() {
         </div>
       </section>
 
+      <section className="py-24 px-6 bg-background">
+        <div className="max-w-3xl mx-auto text-center">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={fadeIn}
+          >
+            <p className="font-handwritten text-2xl md:text-3xl/relaxed text-foreground leading-relaxed">
+              "No meio dele, uma terra verde e irregular, cercada de água por todos os lados, como se o Brasil tivesse guardado um segredo aqui e esquecido de avisar."
+            </p>
+            <p className="mt-6 text-xs uppercase tracking-[0.2em] text-accent-warm/70">
+              Trecho da primeira carta. Florianópolis, julho de 2026.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
       {/* 2. ME CHAMO AMÉLIA */}
       <section className="py-32 px-6 bg-secondary relative overflow-hidden">
         <div className="max-w-4xl mx-auto">
