@@ -23,7 +23,7 @@ const faqs = [
     categoria: "Assinatura",
     perguntas: [
       { q: "Posso cancelar quando quiser?", a: "Sim. Você pode cancelar a qualquer momento. Para não receber a carta daquele mês, cancele até o dia 8. Cancelamentos após o dia 8 ainda recebem a carta daquele mês." },
-      { q: "O que chega dentro do envelope?", a: "Cada envelope contém: a carta de Mel (3 páginas impressas em papel premium), um postcard ilustrado do destino do mês, um item colecionável, uma playlist via QR code, e algo especial daquele lugar." },
+      { q: "O que chega dentro do envelope?", a: "Cada envelope contém duas folhas de papel A4 premium impressas frente e verso — quatro páginas de história — com design exclusivo Cartas do Litoral. Mais um pequeno detalhe físico inspirado no lugar daquele mês." },
       { q: "Qual é a diferença entre o plano mensal e o anual?", a: "O plano mensal é cobrado todo mês e pode ser cancelado a qualquer momento. O plano anual oferece melhor valor — você paga por 12 meses e recebe as 12 cartas da Season 1 completa." },
       { q: "Posso pausar a minha assinatura?", a: "Por enquanto não oferecemos pausa — apenas cancelamento. Entre em contato em oi@cartasdolitoral.com.br se precisar de ajuda." }
     ]
