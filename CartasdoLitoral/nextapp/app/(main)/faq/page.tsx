@@ -12,8 +12,8 @@ const faqs = [
   {
     categoria: "Entrega",
     perguntas: [
-      { q: "Quando a carta chega?", a: "Despachamos todas as cartas entre os dias 10 e 15 de cada mês pelos Correios. Dependendo da sua cidade, a carta chega antes do fim do mês." },
-      { q: "Assinei hoje. Quando recebo a primeira carta?", a: "Se a sua assinatura foi confirmada até o dia 9, a sua primeira carta parte neste mês. Se foi confirmada no dia 10 ou depois, a sua primeira carta parte no mês seguinte." },
+      { q: "Quando a carta chega?", a: "As cartas são despachadas entre os dias 10 e 15 de cada mês pelos Correios. A primeira edição parte em julho de 2026. Dependendo da sua cidade, a carta chega antes do fim do mês." },
+      { q: "Assinei hoje. Quando recebo a primeira carta?", a: "Todos os assinantes recebem a história desde o início. A primeira carta é de Florianópolis, julho de 2026. As assinaturas abrem em junho — quem está na lista recebe aviso antes de todo mundo." },
       { q: "Vou receber um código de rastreamento?", a: "A sua primeira carta é enviada com rastreamento pelos Correios — você receberá o código por email. As cartas seguintes são enviadas via correio padrão." },
       { q: "Vocês entregam para todo o Brasil?", a: "Sim — despachamos para todo o Brasil via Correios." },
       { q: "Não recebi a minha carta. O que faço?", a: "Se o prazo de entrega já passou, entre em contato em oi@cartasdolitoral.com.br com: nome completo, endereço de entrega, número do mês da carta em falta, e email usado na assinatura. Respondemos em até 3 dias úteis." }
