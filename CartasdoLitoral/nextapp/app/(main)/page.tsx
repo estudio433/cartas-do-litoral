@@ -114,7 +114,7 @@ export default function LandingPage() {
               transition={{ delay: 0, duration: 0.8 }}
               className="text-4xl lg:text-5xl/tight font-serif text-foreground"
             >
-              CONTINUE A HISTÓRIA
+              Todo mês, uma carta
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 10 }}
@@ -122,31 +122,15 @@ export default function LandingPage() {
               transition={{ delay: 0.4, duration: 0.8 }}
               className="text-4xl lg:text-5xl/tight font-serif text-foreground mb-8"
             >
-              COM A MEL
+              da costa de Santa Catarina.
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8, duration: 0.8 }}
-              className="text-lg/relaxed text-muted-foreground flex flex-col gap-1"
-            >
-              <span>Uma carta por mês</span>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1.2, duration: 0.8 }}
-              className="text-lg/relaxed text-muted-foreground flex flex-col gap-1"
-            >
-              <span>Um novo lugar do litoral</span>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1.6, duration: 0.8 }}
               className="text-lg/relaxed text-muted-foreground mb-12 flex flex-col gap-1"
             >
-              <span>Para ler com calma</span>
+              <span>Escrita por Mel, que deixou tudo aos 37 e foi para o litoral descobrir se ainda existia.</span>
             </motion.div>
             <motion.button
               onClick={() => openModal("anual")}
@@ -155,7 +139,7 @@ export default function LandingPage() {
               transition={{ delay: 2.0, duration: 0.8 }}
               className="px-8 py-4 border border-accent-warm text-accent-warm hover:bg-accent-warm hover:text-white transition-all duration-500 font-medium tracking-wide"
             >
-              Receber a primeira carta
+              Quero acompanhar desde o início
             </motion.button>
           </motion.div>
         </div>
