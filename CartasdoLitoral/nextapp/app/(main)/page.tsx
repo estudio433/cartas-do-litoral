@@ -163,6 +163,37 @@ export default function LandingPage() {
         </div>
       </section>
 
+      <section className="py-24 px-6 bg-secondary text-center">
+        <div className="max-w-xl mx-auto">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={fadeIn}
+            className="space-y-6"
+          >
+            <p className="text-xs uppercase tracking-[0.2em] text-accent-warm/70">
+              Primeira edição — julho de 2026
+            </p>
+            <h2 className="font-serif text-3xl md:text-4xl text-foreground">
+              Estamos começando do início.
+            </h2>
+            <p className="text-muted-foreground leading-relaxed">
+              Quem entra agora acompanha a história desde a primeira carta — como toda boa descoberta deveria ser.
+            </p>
+            <p className="text-xs text-muted-foreground/50 tracking-wide">
+              Primeiros exemplares enviados em tiragem inicial.
+            </p>
+            <button
+              onClick={() => openModal("anual")}
+              className="px-8 py-4 border border-accent-warm text-accent-warm hover:bg-accent-warm hover:text-white transition-all duration-500 font-medium tracking-wide"
+            >
+              Quero acompanhar desde o início
+            </button>
+          </motion.div>
+        </div>
+      </section>
+
       {/* 2. ME CHAMO AMÉLIA */}
       <section className="py-32 px-6 bg-secondary relative overflow-hidden">
         <div className="max-w-4xl mx-auto">
