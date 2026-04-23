@@ -94,7 +94,7 @@ export default function Cartas() {
               transition={{ delay: 0.8, duration: 0.8 }}
               className="text-lg/relaxed text-muted-foreground flex flex-col gap-1"
             >
-              <span>Uma experiência de correspondência física.</span>
+              <span>Uma carta por mês da costa de Santa Catarina.</span>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 10 }}
@@ -102,7 +102,7 @@ export default function Cartas() {
               transition={{ delay: 1.2, duration: 0.8 }}
               className="text-lg/relaxed text-muted-foreground flex flex-col gap-1"
             >
-              <span>Cada mês, Mel escreve de um novo lugar do litoral.</span>
+              <span>Escrita por Mel, que foi para o litoral descobrir se ainda existia.</span>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 10 }}
@@ -119,7 +119,7 @@ export default function Cartas() {
               transition={{ delay: 2.0, duration: 0.8 }}
               className="px-8 py-4 border border-accent-warm text-accent-warm hover:bg-accent-warm hover:text-white transition-all duration-500 font-medium tracking-wide"
             >
-              Receber a primeira carta
+              Quero acompanhar desde o início
             </motion.button>
           </motion.div>
         </div>

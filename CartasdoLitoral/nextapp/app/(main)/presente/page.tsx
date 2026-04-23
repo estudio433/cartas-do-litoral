@@ -76,6 +76,9 @@ export default function Presente() {
                 <p className="text-xs text-muted-foreground leading-relaxed">12 cartas · 12 lugares · 1 ano completo · R$600</p>
                 <p className="text-xs text-accent-warm/70 font-medium tracking-wide uppercase">Único plano disponível para presentes</p>
               </div>
+              <p className="text-xs text-muted-foreground/50 tracking-wide">
+                Assinaturas abertas em junho. Nenhum pagamento agora.
+              </p>
             </div>
           </motion.div>
         </div>
