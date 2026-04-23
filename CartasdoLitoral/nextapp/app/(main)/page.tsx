@@ -62,7 +62,7 @@ export default function LandingPage() {
       const res = await fetch("/api/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, firstName }),
+        body: JSON.stringify({ email, firstName, tags: ["newsletter"] }),
       });
       if (res.ok) { setFormState("success"); setEmail(""); setFirstName(""); }
       else { setFormState("error"); }
@@ -241,8 +241,8 @@ export default function LandingPage() {
             <Mail size={20} />
           </div>
           <div>
-            <h2 className="font-serif text-3xl mb-4">Prefere começar devagar?</h2>
-            <p className="text-muted-foreground">Receba trechos da história de Mel e novidades por email.</p>
+            <h2 className="font-serif text-3xl mb-4">Quer começar devagar?</h2>
+            <p className="text-muted-foreground">Emails ocasionais com trechos, lugares do litoral e notícias da próxima correspondência.</p>
           </div>
           {formState === "success" ? (
             <div className="py-8 space-y-3">
@@ -272,7 +272,7 @@ export default function LandingPage() {
                 {" "}da Beehiiv.
               </p>
               <button type="submit" disabled={formState === "loading"} className="w-full sm:w-auto px-8 py-4 bg-foreground text-white hover:bg-foreground/90 transition-colors font-medium tracking-wide whitespace-nowrap disabled:opacity-60">
-                {formState === "loading" ? "Enviando..." : "Quero acompanhar"}
+                {formState === "loading" ? "Enviando..." : "Quero acompanhar desde o início"}
               </button>
             </form>
           )}
