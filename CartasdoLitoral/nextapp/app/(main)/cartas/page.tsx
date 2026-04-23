@@ -157,9 +157,9 @@ export default function Cartas() {
             <div className="space-y-8">
               <h2 className="font-serif text-4xl">O que chega até você</h2>
               <div className="space-y-6 text-muted-foreground leading-relaxed">
-                <p>Uma carta escrita por Mel, contando sua jornada por um novo lugar do litoral.</p>
-                <p>Um detalhe do lugar — algo para guardar, tocar ou lembrar.</p>
-                <p>A história continua além do papel, com conteúdos que se desdobram com o tempo.</p>
+                <p>Duas folhas de papel A4 premium, impressas frente e verso — quatro páginas de história. Cada carta tem design exclusivo Cartas do Litoral, com ilustração de borda e carimbo postal do lugar.</p>
+                <p>Um pequeno detalhe físico inspirado no destino do mês — para guardar, tocar ou lembrar.</p>
+                <p>Não é uma carta solta. É uma história que continua.</p>
               </div>
             </div>
           </motion.div>
