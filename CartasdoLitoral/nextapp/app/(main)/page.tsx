@@ -9,7 +9,7 @@ import { ArrowRight, Mail, CalendarDays, MailOpen, Layers } from "lucide-react";
 
 const heroImage = "/images/Cartas_do_Litoral_Logo_(6)_1775817332554.png";
 const melImage = "/images/Mel_Pousada_Sunset_Interior_01.jpg";
-const cartasImage = "/images/Mel_Pousada_Morning_Envelope_01.png";
+const cartasImage = "/images/Mel_Pousada_Morning_Envelope_Watercolor_01.png";
 const landingCompositeImage = "/images/Cartas_do_litoral_landing_page_(14)_1775687418525.png";
 
 const postImages: Record<string, string> = {
@@ -252,7 +252,7 @@ export default function LandingPage() {
           <div className="max-w-5xl mx-auto">
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn} className="grid md:grid-cols-2 gap-16 items-center">
               <div className="relative">
-                <img src="/images/Mel_Pousada_Morning_Envelope_01.png" alt="Envelope com a carta da Mel" className="w-full aspect-[4/5] object-cover rounded-[10px] shadow-md" style={{ filter: "saturate(0.93)" }} />
+                <img src="/images/Mel_Pousada_Morning_Envelope_Watercolor_01.png" alt="Envelope com a carta da Mel" className="w-full aspect-[4/5] object-cover rounded-[10px] shadow-md" style={{ filter: "saturate(0.93)" }} />
               </div>
               <div className="space-y-8">
                 <h2 className="font-serif text-4xl">O que chega até você</h2>

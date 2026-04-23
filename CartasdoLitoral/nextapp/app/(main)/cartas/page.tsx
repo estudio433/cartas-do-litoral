@@ -6,7 +6,7 @@ import { PenLine, Mail, BookOpen } from "lucide-react";
 import Link from "next/link";
 import WaitlistModal from "@/components/WaitlistModal";
 
-const cartasImage = "/images/Mel_Pousada_Morning_Envelope_01.png";
+const cartasImage = "/images/Mel_Pousada_Morning_Envelope_Watercolor_01.png";
 const heroCartasImage = "/images/Cartas_do_litoral_landing_page_(20)_1775766669174.png";
 const melCartasVideo = "/images/Mel-Cartas.mp4";
 
@@ -109,7 +109,7 @@ export default function Cartas() {
         <div className="max-w-5xl mx-auto">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn} className="grid md:grid-cols-2 gap-16 items-center">
             <div>
-              <img src="/images/Mel_Pousada_Morning_Envelope_01.png" alt="Envelope com a carta da Mel" className="w-full aspect-[4/5] object-cover rounded-[10px] shadow-md" style={{ filter: "saturate(0.93)" }} />
+              <img src="/images/Mel_Pousada_Morning_Envelope_Watercolor_01.png" alt="Envelope com a carta da Mel" className="w-full aspect-[4/5] object-cover rounded-[10px] shadow-md" style={{ filter: "saturate(0.93)" }} />
             </div>
             <div className="space-y-8">
               <h2 className="font-serif text-4xl">O que chega até você</h2>
