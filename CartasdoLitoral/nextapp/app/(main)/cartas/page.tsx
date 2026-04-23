@@ -51,33 +51,76 @@ export default function Cartas() {
 
   return (
     <div className="pt-20">
-      <section className="relative w-full overflow-hidden" style={{ maxHeight: "520px" }}>
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="w-full object-cover"
-          style={{ maxHeight: "520px" }}
-          src={melCartasVideo}
-        />
-        <div className="absolute inset-0 bg-[#1f3a44]/10" />
-      </section>
-
-      <section className="py-32 px-6 bg-background">
-        <div className="max-w-2xl mx-auto text-center">
-          <motion.div initial="hidden" animate="visible" variants={fadeIn}>
-            <div className="w-full mb-12 text-accent-green/40">
-              <svg viewBox="0 0 800 48" fill="none" preserveAspectRatio="none" className="w-full">
-                <path d="M0 8 C50 8 50 2 100 2 C150 2 150 8 200 8 C250 8 250 2 300 2 C350 2 350 8 400 8 C450 8 450 2 500 2 C550 2 550 8 600 8 C650 8 650 2 700 2 C750 2 750 8 800 8" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round"/>
-                <path d="M0 20 C50 20 50 14 100 14 C150 14 150 20 200 20 C250 20 250 14 300 14 C350 14 350 20 400 20 C450 20 450 14 500 14 C550 14 550 20 600 20 C650 20 650 14 700 14 C750 14 750 20 800 20" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round"/>
-                <path d="M0 32 C50 32 50 26 100 26 C150 26 150 32 200 32 C250 32 250 26 300 26 C350 26 350 32 400 32 C450 32 450 26 500 26 C550 26 550 32 600 32 C650 32 650 26 700 26 C750 26 750 32 800 32" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round"/>
-                <path d="M0 44 C50 44 50 38 100 38 C150 38 150 44 200 44 C250 44 250 38 300 38 C350 38 350 44 400 44 C450 44 450 38 500 38 C550 38 550 44 600 44 C650 44 650 38 700 38 C750 38 750 44 800 44" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round"/>
-              </svg>
-            </div>
-            <h1 className="font-serif text-5xl mb-8">O que é Cartas do Litoral</h1>
-            <p className="text-muted-foreground text-lg leading-relaxed">Uma experiência de correspondência física. Cada mês, Mel escreve de um lugar diferente do litoral Catarinense — e a carta chega até você pelo correio.</p>
-            <p className="text-muted-foreground text-lg leading-relaxed mt-4">Não é um newsletter. Não é um podcast. É uma carta. Para ler com calma.</p>
+      {/* HERO */}
+      <section className="min-h-[calc(100vh-5rem)] flex flex-col lg:flex-row relative overflow-hidden">
+        <div className="lg:w-1/2 w-full h-[50vh] lg:h-auto relative">
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-full object-cover"
+            src={melCartasVideo}
+          />
+        </div>
+        <div className="lg:w-1/2 w-full bg-background relative flex items-center justify-center p-8 lg:p-20 overflow-hidden">
+          <div className="absolute left-0 top-1/3 -translate-y-1/2 w-full pointer-events-none opacity-30 text-accent-green">
+            <svg viewBox="0 0 1000 100" fill="none" preserveAspectRatio="none">
+              <path d="M0 25 C150 25 150 5 300 5 C450 5 450 25 600 25 C750 25 750 5 900 5 C1000 5 1000 25 1000 25" stroke="currentColor" strokeWidth="1"/>
+              <path d="M0 50 C150 50 150 30 300 30 C450 30 450 50 600 50 C750 50 750 30 900 30 C1000 30 1000 50 1000 50" stroke="currentColor" strokeWidth="1"/>
+              <path d="M0 75 C150 75 150 55 300 55 C450 55 450 75 600 75 C750 75 750 55 900 55 C1000 55 1000 75 1000 75" stroke="currentColor" strokeWidth="1"/>
+            </svg>
+          </div>
+          <motion.div initial="hidden" animate="visible" variants={fadeIn} className="relative z-10 max-w-md w-full">
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0, duration: 0.8 }}
+              className="text-4xl lg:text-5xl/tight font-serif text-foreground"
+            >
+              O QUE É
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.4, duration: 0.8 }}
+              className="text-4xl lg:text-5xl/tight font-serif text-foreground mb-8"
+            >
+              CARTAS DO LITORAL
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.8, duration: 0.8 }}
+              className="text-lg/relaxed text-muted-foreground flex flex-col gap-1"
+            >
+              <span>Uma experiência de correspondência física.</span>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1.2, duration: 0.8 }}
+              className="text-lg/relaxed text-muted-foreground flex flex-col gap-1"
+            >
+              <span>Cada mês, Mel escreve de um novo lugar do litoral.</span>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1.6, duration: 0.8 }}
+              className="text-lg/relaxed text-muted-foreground mb-12 flex flex-col gap-1"
+            >
+              <span>Para ler com calma.</span>
+            </motion.div>
+            <motion.button
+              onClick={() => openModal("anual")}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 2.0, duration: 0.8 }}
+              className="px-8 py-4 border border-accent-warm text-accent-warm hover:bg-accent-warm hover:text-white transition-all duration-500 font-medium tracking-wide"
+            >
+              Receber a primeira carta
+            </motion.button>
           </motion.div>
         </div>
       </section>
