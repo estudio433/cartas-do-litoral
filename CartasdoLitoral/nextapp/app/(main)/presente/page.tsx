@@ -119,9 +119,9 @@ export default function Presente() {
           ) : (
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn} className="space-y-10">
               <div className="space-y-3">
-                <p className="text-xs uppercase tracking-widest text-accent-warm/70 font-semibold">Lista de espera para presentes</p>
-                <h2 className="font-serif text-4xl text-foreground">Reserve agora.</h2>
-                <p className="text-muted-foreground leading-relaxed">Ainda estamos em pré-lançamento. Registre o interesse aqui e entraremos em contato assim que as cartas estiverem prontas para partir.</p>
+                <p className="text-xs uppercase tracking-widest text-accent-warm/70 font-semibold">Presentes — pré-lançamento</p>
+                <h2 className="font-serif text-4xl text-foreground">Registre o interesse.</h2>
+                <p className="text-muted-foreground leading-relaxed">Ainda estamos em pré-lançamento. Deixe os dados aqui — entraremos em contato em junho para confirmar os detalhes e o pagamento.</p>
               </div>
               <form onSubmit={handleSubmit} className="space-y-8">
                 <div className="space-y-3">
