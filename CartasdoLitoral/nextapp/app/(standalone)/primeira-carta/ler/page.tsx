@@ -24,7 +24,7 @@ export default function LerPrimeiraCarta() {
             text-muted-foreground/50 hover:text-accent-warm
             transition-colors"
         >
-          ← Voltar
+          ← Voltar à carta encontrada
         </Link>
       </div>
 
@@ -152,7 +152,7 @@ export default function LerPrimeiraCarta() {
             <p className="text-muted-foreground text-sm leading-relaxed
               max-w-xs mx-auto">
               A primeira carta parte em julho de 2026.
-              Assinaturas abrem em junho.
+              Avisaremos primeiro quem estiver na lista.
             </p>
             <Link
               href="/primeira-carta"
@@ -161,8 +161,13 @@ export default function LerPrimeiraCarta() {
                 transition-all duration-500 font-medium tracking-wide
                 text-sm"
             >
-              Quero acompanhar desde o início
+              Quero começar do início
             </Link>
+            <p className="text-xs text-muted-foreground/50
+              tracking-wide">
+              Sem pressa. Sem excesso. Só cartas ocasionais
+              até julho.
+            </p>
             <p className="font-handwritten text-lg text-accent-warm">
               Com o mar ainda nos olhos, Mel ✉
             </p>
