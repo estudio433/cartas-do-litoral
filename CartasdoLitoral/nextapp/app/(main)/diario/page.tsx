@@ -8,7 +8,7 @@ import { ArrowRight } from "lucide-react";
 const postImages: Record<string, string> = {
   "florianopolis-no-inverno": "/images/Blog_Floripa_Inverno_01.jpg",
   "vale-a-pena-florianopolis-julho": "/images/Blog_Floripa_Julho_01.jpg",
-  "renda-de-bilro-florianopolis": "/images/Mel_Cafe_CostaLagoa_Winter_Blog_01.png",
+  "renda-de-bilro-florianopolis": "/images/Blog_Floripa_Renda_de_Bilro_01.jpg",
 };
 
 export default function DiarioIndex() {
