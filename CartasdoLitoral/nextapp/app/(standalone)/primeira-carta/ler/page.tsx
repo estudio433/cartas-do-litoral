@@ -39,7 +39,7 @@ export default function LerPrimeiraCarta() {
         {/* Letter header */}
         <div className="mb-12 space-y-1">
           <p className="font-handwritten text-lg text-muted-foreground">
-            Mês 01
+            Carta 01
           </p>
           <p className="font-handwritten text-lg text-muted-foreground">
             Florianópolis, SC
