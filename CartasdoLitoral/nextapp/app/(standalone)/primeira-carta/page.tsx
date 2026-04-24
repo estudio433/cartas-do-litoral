@@ -2,7 +2,6 @@
 
 import { motion, type Variants } from "framer-motion";
 import { useState } from "react";
-import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 
 const fadeIn: Variants = {
@@ -14,9 +13,6 @@ export default function Feira() {
   const [firstName, setFirstName] = useState("");
   const [email, setEmail] = useState("");
   const [formState, setFormState] = useState<"idle" | "loading" | "success" | "error">("idle");
-
-  const searchParams = useSearchParams();
-  const location = searchParams.get("loc") || "unknown";
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
