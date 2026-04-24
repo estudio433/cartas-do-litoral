@@ -150,7 +150,7 @@ export default function LandingPage() {
               transition={{ delay: 0.8, duration: 0.8 }}
               className="text-lg/relaxed text-muted-foreground mb-12 flex flex-col gap-1"
             >
-              <span>Escrita por Mel, que deixou tudo aos 37 e foi para o litoral descobrir se ainda existia.</span>
+              <span>Escrita por Mel, que deixou tudo aos 37 e foi para o litoral ver se ainda existia.</span>
             </motion.div>
             <motion.button
               onClick={() => openModal("anual")}
