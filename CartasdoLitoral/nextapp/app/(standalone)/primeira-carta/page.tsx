@@ -3,6 +3,7 @@
 import { motion, type Variants } from "framer-motion";
 import { useState } from "react";
 import { useSearchParams } from "next/navigation";
+import Link from "next/link";
 
 const fadeIn: Variants = {
   hidden: { opacity: 0, y: 20 },
@@ -55,7 +56,13 @@ export default function Feira() {
               <p className="font-serif text-3xl text-foreground leading-relaxed">Que bom que você existe.</p>
               <p className="text-muted-foreground leading-relaxed">Você está na lista. Mel vai escrever para você em breve — primeiro por email, depois num envelope de verdade.</p>
               <p className="font-handwritten text-xl text-accent-warm">Com o mar ainda nos olhos, Mel ✉</p>
-              <a href="https://www.cartasdolitoral.com.br" className="inline-block text-sm text-muted-foreground/60 hover:text-accent-warm transition-colors tracking-wide">Conhecer o site →</a>
+              <Link
+                href="/primeira-carta/ler"
+                className="inline-block px-8 py-4 border border-accent-warm text-accent-warm hover:bg-accent-warm hover:text-white transition-all duration-500 font-medium tracking-wide text-sm"
+              >
+                Ler a primeira página agora
+              </Link>
+              <a href="https://www.cartasdolitoral.com.br" className="inline-block text-sm text-muted-foreground/60 hover:text-accent-warm transition-colors tracking-wide">Conhecer o site completo →</a>
             </motion.div>
           ) : (
             <>
