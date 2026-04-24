@@ -2,6 +2,7 @@
 
 import { motion, type Variants } from "framer-motion";
 import { useState } from "react";
+import { useSearchParams } from "next/navigation";
 
 const fadeIn: Variants = {
   hidden: { opacity: 0, y: 20 },
@@ -13,6 +14,9 @@ export default function Feira() {
   const [email, setEmail] = useState("");
   const [formState, setFormState] = useState<"idle" | "loading" | "success" | "error">("idle");
 
+  const searchParams = useSearchParams();
+  const location = searchParams.get("loc") || "unknown";
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setFormState("loading");
@@ -20,7 +24,7 @@ export default function Feira() {
       const res = await fetch("/api/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, firstName, tags: ["market-signup", "waitlist"], utm_source: "feira", utm_medium: "qr-code" }),
+        body: JSON.stringify({ email, firstName, tags: ["market-signup", `loc-${location}`], utm_source: "feira", utm_medium: "qr-code" }),
       });
       if (res.ok) { setFormState("success"); setFirstName(""); setEmail(""); }
       else { setFormState("error"); }
