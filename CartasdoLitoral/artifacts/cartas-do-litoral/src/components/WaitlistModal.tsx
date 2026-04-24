@@ -54,7 +54,7 @@ export default function WaitlistModal({ isOpen, plan, onClose }: WaitlistModalPr
           email,
           firstName,
           plan: selectedPlan,
-          tags: [`waitlist`, `plano-${selectedPlan}`],
+          tags: [`waitlist-${selectedPlan}`],
         }),
       });
 
@@ -137,13 +137,13 @@ export default function WaitlistModal({ isOpen, plan, onClose }: WaitlistModalPr
                     {/* Header */}
                     <div className="mb-6 space-y-2">
                       <p className="text-xs font-mono tracking-widest text-accent-warm uppercase">
-                        Lista de espera
+                        Julho de 2026
                       </p>
                       <h2 className="font-serif text-2xl text-foreground">
-                        Reserve o seu lugar.
+                        Você vai receber a história desde o início.
                       </h2>
                       <p className="text-muted-foreground text-sm leading-relaxed">
-                        As cartas ainda estão sendo preparadas. Deixe o seu contato e avise quando estiver pronto para receber a primeira.
+                        Deixe o seu nome e email. Quando as assinaturas abrirem em junho, você recebe aviso antes de todo mundo.
                       </p>
                     </div>
 
@@ -205,7 +205,7 @@ export default function WaitlistModal({ isOpen, plan, onClose }: WaitlistModalPr
                         disabled={formState === "loading"}
                         className="w-full py-4 bg-foreground text-white text-sm font-medium tracking-wide hover:bg-foreground/90 transition-colors disabled:opacity-60 mt-2"
                       >
-                        {formState === "loading" ? "Guardando o seu lugar..." : "Quero ser avisada"}
+                        {formState === "loading" ? "Guardando o seu lugar..." : "Quero acompanhar desde o início"}
                       </button>
 
                       <p className="text-center text-xs text-muted-foreground/60 pt-1">
