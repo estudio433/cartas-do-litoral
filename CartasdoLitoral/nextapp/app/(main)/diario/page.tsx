@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
 const postImages: Record<string, string> = {
-  "florianopolis-no-inverno": "/images/Mel_Floripa_Aerial_Blog_01.png",
-  "vale-a-pena-florianopolis-julho": "/images/Mel_Rocks_Winter_Garopaba_01.png",
+  "florianopolis-no-inverno": "/images/Blog_Floripa_Inverno_01.jpg",
+  "vale-a-pena-florianopolis-julho": "/images/Blog_Floripa_Julho_01.jpg",
   "renda-de-bilro-florianopolis": "/images/Mel_Cafe_CostaLagoa_Winter_Blog_01.png",
 };
 
