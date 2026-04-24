@@ -90,6 +90,9 @@ export default function PrimeiraCarta() {
             <p className="font-serif text-3xl text-foreground leading-relaxed">
               Que bom que você existe.
             </p>
+            <p className="text-muted-foreground text-sm leading-relaxed">
+              Seu convite para julho está guardado.
+            </p>
             <div className="space-y-3">
               <p className="text-xs uppercase tracking-widest
                 text-accent-warm/70 font-semibold">
@@ -147,8 +150,9 @@ export default function PrimeiraCarta() {
               </h1>
               <p className="text-muted-foreground text-lg leading-relaxed
                 max-w-sm mx-auto">
-                Todo mês, uma carta da costa de Santa Catarina.
-                Uma história contada aos poucos, pelo correio.
+                Todo mês, você recebe uma carta física da costa
+                de Santa Catarina. Uma história contada aos poucos,
+                pelo correio.
               </p>
             </motion.div>
 
@@ -205,7 +209,7 @@ export default function PrimeiraCarta() {
             >
               <div className="text-center space-y-2">
                 <h2 className="font-serif text-2xl text-foreground">
-                  Receba a primeira carta digitalmente
+                  Leia o começo agora
                 </h2>
                 <p className="text-muted-foreground text-sm leading-relaxed">
                   E acompanhe o início antes das primeiras entregas.
