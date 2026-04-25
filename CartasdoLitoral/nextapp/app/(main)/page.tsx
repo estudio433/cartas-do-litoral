@@ -7,10 +7,6 @@ import WaitlistModal from "@/components/WaitlistModal";
 import { posts } from "@/data/posts";
 import { ArrowRight, Mail, CalendarDays, MailOpen, Layers } from "lucide-react";
 
-const heroImage = "/images/Cartas_do_Litoral_Logo_(6)_1775817332554.png";
-const melImage = "/images/Mel_Pousada_Sunset_Interior_01.jpg";
-const cartasImage = "/images/Mel_Pousada_Morning_Envelope_Watercolor_01.png";
-const landingCompositeImage = "/images/Cartas_do_litoral_landing_page_(14)_1775687418525.png";
 
 const postImages: Record<string, string> = {
   "florianopolis-no-inverno": "/images/Blog_Floripa_Inverno_01.jpg",
