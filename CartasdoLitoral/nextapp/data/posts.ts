@@ -1,6 +1,3 @@
-Replace the entire contents of data/posts.ts with 
-the following:
-
 export const posts = [
   {
     slug: "florianopolis-no-inverno",
