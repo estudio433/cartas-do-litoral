@@ -9,9 +9,14 @@ import { ArrowRight, Mail, CalendarDays, MailOpen, Layers } from "lucide-react";
 
 
 const postImages: Record<string, string> = {
-  "florianopolis-no-inverno": "/images/Blog_Floripa_Inverno_01.jpg",
+  "florianopolis-no-inverno": "/images/Blog_Floripa_Inverno_02.png",
   "vale-a-pena-florianopolis-julho": "/images/Blog_Floripa_Julho_01.jpg",
   "renda-de-bilro-florianopolis": "/images/Blog_Floripa_Renda_de_Bilro_01.png",
+  "vento-sul-florianopolis": "/images/Blog_Floripa_Inverno_01.jpg",
+  "mercado-publico-florianopolis": "/images/Blog_MercadoPublico_01.png",
+  "costa-da-lagoa-florianopolis": "/images/Blog_Costa_Lagoa_01.png",
+  "santo-antonio-de-lisboa-florianopolis": "/images/Blog_Santo_Antonio_01.png",
+  "ribeirao-da-ilha-florianopolis": "/images/Blog_Ribeirao_01.png",
 };
 
 const fadeIn: Variants = {
