@@ -182,6 +182,18 @@ export default function Cartas() {
                 <button onClick={() => openModal("anual")} className="w-full px-6 py-4 bg-accent-warm text-white hover:bg-accent-warm/90 transition-colors font-medium tracking-wide shadow-lg shadow-accent-warm/20">Quero acompanhar desde o início</button>
               </div>
             </div>
+            <div className="mt-12 flex justify-center">
+              <Link href="/presente" className="inline-flex items-center gap-3 text-muted-foreground hover:text-accent-warm transition-colors group">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-accent-warm/60 group-hover:text-accent-warm transition-colors">
+                  <polyline points="20 12 20 22 4 22 4 12"/>
+                  <rect x="2" y="7" width="20" height="5"/>
+                  <line x1="12" y1="22" x2="12" y2="7"/>
+                  <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/>
+                  <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/>
+                </svg>
+                <span className="text-sm font-medium tracking-wide">Dar como presente</span>
+              </Link>
+            </div>
           </motion.div>
         </div>
       </section>

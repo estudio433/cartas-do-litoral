@@ -73,7 +73,7 @@ export default function Presente() {
               </p>
               <div className="border border-accent-warm/20 p-5 bg-secondary space-y-1">
                 <p className="text-sm font-medium text-foreground">Season 1 — Litoral Catarinense</p>
-                <p className="text-xs text-muted-foreground leading-relaxed">12 cartas · 12 lugares · 1 ano completo · R$600</p>
+                <p className="text-xs text-muted-foreground leading-relaxed">12 cartas · 12 lugares · 1 ano completo</p>
                 <p className="text-xs text-accent-warm/70 font-medium tracking-wide uppercase">Único plano disponível para presentes</p>
               </div>
               <p className="text-xs text-muted-foreground/50 tracking-wide">
