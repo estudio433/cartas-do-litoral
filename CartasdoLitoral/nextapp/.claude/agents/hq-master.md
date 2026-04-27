@@ -146,3 +146,6 @@ Update `09_Memory.md` with:
 - Decisions made and locked
 - New priority tasks
 - Any strategy or operations changes
+- Run `git log --oneline -10` and compare against 
+   09_Memory.md — log any commits not yet recorded.
+
