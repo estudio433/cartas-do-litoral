@@ -152,6 +152,7 @@ export default function LandingPage() {
               className="text-lg/relaxed text-muted-foreground mb-12 flex flex-col gap-1"
             >
               <span>Escrita por Mel, que deixou tudo aos 37 e foi para o litoral ver se ainda existia.</span>
+              <span>12 cartas. 12 lugares. Uma história que chega pelo correio, um capítulo por mês.</span>
             </motion.div>
             <motion.button
               onClick={() => openModal("anual")}
