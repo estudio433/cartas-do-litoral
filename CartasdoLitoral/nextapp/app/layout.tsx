@@ -2,8 +2,35 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Cartas do Litoral",
-  description: "Uma experiência de correspondência física que percorre o litoral até a sua caixa de correio.",
+  title: {
+    default: "Cartas do Litoral",
+    template: "%s | Cartas do Litoral",
+  },
+  description:
+    "Uma carta por mês da costa de Santa Catarina. Escrita por Mel, que deixou tudo aos 37 e foi para o litoral descobrir se ainda existia.",
+  openGraph: {
+    title: "Cartas do Litoral",
+    description:
+      "Uma carta por mês da costa de Santa Catarina. Escrita por Mel, que deixou tudo aos 37 e foi para o litoral descobrir se ainda existia.",
+    url: "https://www.cartasdolitoral.com.br",
+    siteName: "Cartas do Litoral",
+    images: [
+      {
+        url: "/images/Mel_Pousada_Morning_Envelope_Watercolor_01.png",
+        width: 1200,
+        height: 630,
+        alt: "Cartas do Litoral — carta de Mel da costa de Santa Catarina",
+      },
+    ],
+    locale: "pt_BR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cartas do Litoral",
+    description: "Uma carta por mês da costa de Santa Catarina.",
+    images: ["/images/Mel_Pousada_Morning_Envelope_Watercolor_01.png"],
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
