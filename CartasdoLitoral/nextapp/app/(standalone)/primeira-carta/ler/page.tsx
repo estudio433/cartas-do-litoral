@@ -61,7 +61,7 @@ export default function LerPrimeiraCarta() {
           <p className="first-letter:text-5xl first-letter:font-bold
             first-letter:text-accent-warm first-letter:float-left
             first-letter:mr-2 first-letter:leading-none first-letter:mt-1">
-            Cheguei. Mas você já sabe que tem história
+            Cheguei. E claro que tem história
             constrangedora envolvida. Já começa bem, né?
           </p>
 
