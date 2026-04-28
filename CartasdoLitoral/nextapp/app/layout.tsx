@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.cartasdolitoral.com.br"),
   title: {
     default: "Cartas do Litoral",
     template: "%s | Cartas do Litoral",
