@@ -39,7 +39,7 @@ export default function LerPrimeiraCarta() {
         {/* Letter header */}
         <div className="mb-12 space-y-1">
           <p className="font-handwritten text-lg text-muted-foreground">
-            Carta 01
+            Mês 01
           </p>
           <p className="font-handwritten text-lg text-muted-foreground">
             Florianópolis, SC
@@ -61,79 +61,47 @@ export default function LerPrimeiraCarta() {
           <p className="first-letter:text-5xl first-letter:font-bold
             first-letter:text-accent-warm first-letter:float-left
             first-letter:mr-2 first-letter:leading-none first-letter:mt-1">
-            Cheguei. Mas você já sabe que tem história constrangedora
-            envolvida. Já começa bem, né?
+            Cheguei. Mas você já sabe que tem história
+            constrangedora envolvida. Já começa bem, né?
           </p>
 
           <p>
-            Então. Avisaram que íamos pousar. A mulher do meu lado estava
-            dormindo. O homem atrás olhava o celular. E então o avião
-            inclinou — aquele mergulho suave que faz o estômago lembrar
-            que você está voando — e de repente o oceano estava em todo
-            lugar. No meio dele, uma terra verde e irregular, cercada de
-            água por todos os lados, como se o Brasil tivesse guardado um
-            segredo aqui e esquecido de avisar.
+            Então. Avisaram que íamos pousar. A mulher do
+            meu lado estava dormindo. O homem atrás olhava
+            o celular. E então o avião inclinou — aquele
+            mergulho suave que faz o estômago lembrar que
+            você está voando — e de repente o oceano estava
+            em todo lugar. No meio dele, uma terra verde e
+            irregular, cercada de água por todos os lados,
+            como se o Brasil tivesse guardado um segredo
+            aqui e esquecido de avisar.
           </p>
 
           <p>Só eu vi.</p>
 
           <p>
-            Tentei tirar uma foto. Derrubei o fone no colo do homem do
-            corredor. Ele devolveu sem olhar, com aquela pressa de quem
-            já chegou antes de pousar. A foto ficou torta, um borrão de
-            azul e verde — tô mandando ela junto. Não dá para ver nada —
-            e é a coisa mais bonita que eu já fotografei.
+            Tentei tirar uma foto. Derrubei o fone no colo
+            do homem do corredor. Ele devolveu sem olhar,
+            com aquela pressa de quem já chegou antes de
+            pousar. A foto ficou torta, um borrão de azul
+            e verde — tô mandando ela junto. Não dá para
+            ver nada — e é a coisa mais bonita que eu já
+            fotografei.
           </p>
 
           <p>
-            Cheguei num julho de Vento Sul. O ar tinha gosto. Trinta e
-            sete anos, Ju. Trinta e sete anos sem saber que o oxigênio
-            podia ter sabor.
+            Cheguei num julho de Vento Sul. O ar tinha
+            gosto. Trinta e sete anos, Ju. Trinta e sete
+            anos sem saber que o oxigênio podia ter sabor.
           </p>
 
           <p>
-            No ônibus do aeroporto para o centro, uma senhora sentada do
-            meu lado perguntou se era minha primeira vez na ilha. Disse
-            que sim. Ela não hesitou: "Vai direto ao Mercado Público.
-            É por lá que a cidade começa."
+            No ônibus do aeroporto para o centro, uma
+            senhora sentada do meu lado perguntou se era
+            minha primeira vez na ilha. Disse que sim.
+            Ela não hesitou: "Vai direto ao Mercado
+            Público. É por lá que a cidade começa."
           </p>
-
-          <p>
-            Estava com o estômago vazio e sem plano nenhum além de chegar
-            — que você vai concordar que já é alguma coisa dado o estado
-            em que eu embarquei — então fui.
-          </p>
-
-          <p>
-            O vão central estava cheio de um barulho bom — pratos,
-            conversas rápidas, o grito dos pescadores anunciando o preço
-            da tainha. Pedi um café e um pastel de berbigão num dos
-            restaurantes do mercado. O moço atrás do balcão perguntou o
-            nome para chamar quando ficasse pronto. Disse Amélia. Ele
-            anotou, virou de costas, e não cantou nada — mas eu já
-            esperei. Sempre espero. Aqui no Brasil a gente não pode ter
-            esse nome em paz. É inevitável: alguém sempre lembra da música.
-          </p>
-
-          <p className="italic">
-            Amélia não tinha a menor vaidade, Amélia é que era mulher
-            de verdade.
-          </p>
-
-          <p>
-            Passei a vida inteira sendo exatamente essa Amélia — a que
-            não pede, a que não incomoda, a que aguenta. Mel é meu.
-          </p>
-
-          <p>
-            Me sentei perto das peixarias e fiquei ouvindo o sotaque
-            manezinho — as palavras saem tão rápidas que tropeçam umas
-            nas outras. Ouvi um senhor chamar o neto de alguma coisa que
-            não entendi e rir logo depois — uma risada tão inteira que me
-            deu vontade de sorrir para um desconhecido.
-          </p>
-
-          <p>Sorri. Ele não viu. A vida que segue.</p>
 
         </div>
 
